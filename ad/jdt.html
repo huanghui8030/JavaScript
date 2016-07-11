@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>学信网</title>
+    <style>
+body{
+  background-color: #9EDE71;
+}
+    </style>
+    <script type="text/javascript">
+    function json2str(o) {
+        var arr = [];
+        var fmt = function(s) {
+            if (typeof s == 'object' && s != null) return json2str(s);
+            return /^(string|number)$/.test(typeof s) ? "\"" + s + "\"" : s;
+        }
+        for (var i in o) arr.push("\"" + i + "\":" + fmt(o[i]));
+        return '{' + arr.join(',') + '}';
+    }
+    var advAreaId = "1400715387";
+    //document.domain="chsi.com.cn";
+    function goo(curr, adv_id) {
+        curr.href = "http://axvert.chsi.com.cn/goo.action?aid=" + adv_id + "&evtype=adv_chsi";
+        return true;
+    }
+
+    function b_load() {
+        var _w = document.body.scrollWidth;
+        var _h = document.body.offsetHeight;
+        var html_id = '1400715387';
+
+        var o_b = json2str({
+            'html_id': html_id,
+            '_w': _w,
+            '_h': _h
+        });
+
+        var supportPostMessage = 'postMessage' in window;
+        if (supportPostMessage) {
+            window.top.postMessage(o_b, '*');
+        } else {
+            var targetFunc = window.navigator['axvert_top'];
+            if (typeof targetFunc == 'function') {
+                targetFunc(o_b, window);
+            } else {
+                throw new Error("target callback function is not defined");
+            }
+        }
+
+    }
+    </script>
+    <style type="text/css">
+    html,
+    body {
+        margin: 0px;
+        padding: 0px;
+        border-width: 0px;
+    }
+    
+    body {
+        float: left;
+    }
+    
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+
+<body onload="b_load()" marginwidth="0" marginheight="0">
+    <script type="text/javascript" src="js/ce.js?2013"></script>
+    <div id="aa1400714287" style="position:relative; width:320px; height:230px">
+        <div id="as1400714288" class="slide_picwrap">
+            <a href="http://gaokao.chsi.com.cn/gkxx/zc/moe/201606/20160624/1540543153.html" target="_blank" onmousedown="goo(this, '1695495853')" onblur="this.href='http://gaokao.chsi.com.cn/gkxx/zc/moe/201606/20160624/1540543153.html'" style="position: absolute; opacity: 1; display: none;"><img src="http://axvert.chsi.com.cn/img/1695495842.jpg" width="320" height="230"></a>
+            <a href="http://gaokao.chsi.com.cn/zsgs/zhangcheng/listVerifedZszc--method-index,lb-1.dhtml" title="2016年高校招生章程" target="_blank" onmousedown="goo(this, '1666126487')" onblur="this.href='http://gaokao.chsi.com.cn/zsgs/zhangcheng/listVerifedZszc--method-index,lb-1.dhtml'" style="position: absolute; opacity: 1;"><img src="http://axvert.chsi.com.cn/img/1666126232.jpg" width="320" height="230"></a>
+            <a href="http://gaokao.chsi.com.cn/zsgs/mdgs.jsp" title="高校特殊类型招生学生名单公示" target="_blank" onmousedown="goo(this, '1665350947')" onblur="this.href='http://gaokao.chsi.com.cn/zsgs/mdgs.jsp'" style="position: absolute; opacity: 1; display: none;"><img src="http://axvert.chsi.com.cn/img/1665350684.jpg" width="320" height="230"></a>
+        </div>
+        <div class="slidePanel">
+            <div class="panelMask"></div>
+            <div class="panelTitle">2016年高校招生章程</div>
+            <div class="slide_nav"><a class="" href="javascript:void(0)">1</a><a href="javascript:void(0)" class="hot">2</a><a href="javascript:void(0)" class="">3</a></div>
+        </div>
+    </div>
+    <style type="text/css">
+    body,
+    div,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+        font: 12px/1.5 "微软雅黑", 宋体;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    .slide_picwrap {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        font: 12px/1.5 "微软雅黑", 宋体, arial;
+    }
+    
+    .slide_picwrap img {
+        border: none;
+    }
+    
+    .slide_picwrap a {
+        border: none;
+        display: block;
+        zoom: 1;
+        float: left;
+        height: 100%;
+    }
+    
+    .slidePanel {
+        position: absolute;
+        height: 34px;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        overflow: hidden;
+        zoom: 1;
+    }
+    
+    .panelMask {
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        filter: Alpha(opacity=30);
+        background: #000;
+        position: absolute;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+    .panelTitle {
+        position: absolute;
+        width: 300px;
+        color: #fff;
+        height: 34px;
+        overflow: hidden;
+        line-height: 34px;
+        font-weight: bold;
+        padding-left: 10px;
+        z-index: 1;
+        zoom: 1;
+    }
+    
+    .slide_nav {
+        position: absolute;
+        right: 0px;
+        font-weight: 600;
+        font-size: 10px;
+        font-family: Verdana, Geneva, sans-serif, tahoma;
+        z-index: 9;
+        text-align: right;
+        float: right;
+    }
+    
+    .slide_nav a {
+        background: none repeat scroll 0 0 #D3D3D3;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 1px 1px 1px #A9A9A9 inset;
+        cursor: pointer;
+        display: inline-block;
+        height: 10px;
+        margin: 12px 10px 0px 0px;
+        overflow: hidden;
+        text-indent: 10em;
+        width: 10px;
+    }
+    
+    .slide_nav a:hover,
+    .slide_nav a.hot {
+        background: none repeat scroll 0 0 #F63;
+        box-shadow: 1px 1px 1px #F65 inset;
+    }
+    </style>
+    <script type="text/javascript">
+    new PicSlide('as1400714288', {
+        type: 'opacity',
+        time: 300
+    });
+    </script>
+</body>
+
+</html>
