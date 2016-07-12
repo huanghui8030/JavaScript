@@ -1,0 +1,2572 @@
+var schoolLists = {
+    "nsc": [
+        {
+            "foreignCountry": "",
+            "needAid": true,
+            "uid": "cy7kwyhpqqfqasgg",
+            "universityCode": "00667700ga",
+            "universityNameCn": "麦吉尔大学",
+            "universityNameFn": "Graduate Admission, McGill University"
+        },
+        {
+            "foreignCountry": "",
+            "needAid": true,
+            "uid": "10000011746882",
+            "universityCode": "10011",
+            "universityNameCn": "德克萨斯大学奥斯汀分校",
+            "universityNameFn": "The University of Texas at Austin"
+        },
+        {
+            "foreignCountry": "",
+            "needAid": false,
+            "uid": "10000028140199",
+            "universityCode": "1012",
+            "universityNameCn": "弗吉尼亚联邦大学，招生办公室",
+            "universityNameFn": "Virginia Commonwealth University, Office of Admissions"
+        }
+    ],
+    "duo": [
+        {
+            "foreignCountry": "",
+            "needAid": true,
+            "uid": "10000029160475",
+            "universityCode": "10010DUO",
+            "universityNameCn": "斯坦福大学",
+            "universityNameFn": "Stanford University"
+        },
+        {
+            "foreignCountry": "",
+            "needAid": true,
+            "uid": "10000029228946",
+            "universityCode": "21PC",
+            "universityNameCn": "格罗宁根大学",
+            "universityNameFn": "University of Groningen"
+        },
+        {
+            "foreignCountry": "",
+            "needAid": false,
+            "uid": "10000029228947",
+            "universityCode": "25BE",
+            "universityNameCn": "格罗宁根汉斯应用技术大学",
+            "universityNameFn": "Hanze University of Applied Sciences"
+        },
+        {
+            "foreignCountry": "",
+            "needAid": true,
+            "uid": "10000029228948",
+            "universityCode": "23AH",
+            "universityNameCn": "萨克逊大学",
+            "universityNameFn": "Saxion University of Applied Sciences"
+        }
+    ],
+    "parchment": {
+        "D": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "z1sr5hhxpv6m7gup",
+                "universityCode": "001165",
+                "universityNameCn": "德保罗大学",
+                "universityNameFn": "DePaul University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "yq49jdkswdtpy3aq",
+                "universityCode": "005744",
+                "universityNameCn": "丹麦技术学院",
+                "universityNameFn": "Denmark Technical College"
+            }
+        ],
+        "E": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "0o3y6r9whmzoe45d",
+                "universityCode": "005180",
+                "universityNameCn": "东卡罗莱纳大学",
+                "universityNameFn": "East Carolina University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "2q1nt9zvbl0jt2iv",
+                "universityCode": "003966",
+                "universityNameCn": "康涅狄格州东部州立大学招生办公室",
+                "universityNameFn": "Eastern Connecticut State University Admissions"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "kqdh60nuok3282uy",
+                "universityCode": "001200",
+                "universityNameCn": "东肯塔基大学",
+                "universityNameFn": "Eastern Kentucky University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4ekw4xrn2mtyzuy2",
+                "universityCode": "004300",
+                "universityNameCn": "东俄勒冈大学",
+                "universityNameFn": "Eastern Oregon University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4x8jw7l4pfkgin8d",
+                "universityCode": "002651",
+                "universityNameCn": "爱丁堡大学",
+                "universityNameFn": "Edinboro University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "mvaq37nj0r5vucip",
+                "universityCode": "003367",
+                "universityNameCn": "爱默生学院",
+                "universityNameFn": "Emerson College"
+            }
+        ],
+        "F": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "9xgjz6o8c0rmtdcr",
+                "universityCode": "003391",
+                "universityNameCn": "费舍尔学院",
+                "universityNameFn": "Fisher College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "27uoqph6fv19ac68",
+                "universityCode": "005206",
+                "universityNameCn": "佛罗里达国际大学",
+                "universityNameFn": "Florida International University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "8dzqsjo9la3w0may",
+                "universityCode": "007303",
+                "universityNameCn": "佛罗里达理工大学",
+                "universityNameFn": "Florida Polytechnic University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "yesrglhg6nkpyttb",
+                "universityCode": "005442",
+                "universityNameCn": "弗朗西斯马里恩大学",
+                "universityNameFn": "Francis Marion University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "g57o6gpjka81sjqo",
+                "universityCode": "004119",
+                "universityNameCn": "弗兰特岭社区大学威斯敏斯特分校",
+                "universityNameFn": "Front Range Community College - Westminster"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "0rgi21xh026yudcz",
+                "universityCode": "005222",
+                "universityNameCn": "傅尔曼大学",
+                "universityNameFn": "Furman University"
+            }
+        ],
+        "G": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "097sini6xrqa8ksg",
+                "universityCode": "003425",
+                "universityNameCn": "捷威社区学院招生办公室康涅狄格州校区",
+                "universityNameFn": "Gateway Community College Admissions (CT)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "muj3jandnk717fr2",
+                "universityCode": "005827",
+                "universityNameCn": "乔治梅森大学",
+                "universityNameFn": "George Mason University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "qqfbn9kb0piap9n2",
+                "universityCode": "001249",
+                "universityNameCn": "乔治敦学院",
+                "universityNameFn": "Georgetown College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "vkgbn4cw694yd2me",
+                "universityCode": "004563",
+                "universityNameCn": "卡塔尔乔治城大学",
+                "universityNameFn": "Georgetown University in Qatar"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ogoxiiv4qp6yamoz",
+                "universityCode": "004331",
+                "universityNameCn": "大峡谷大学",
+                "universityNameFn": "Grand Canyon University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "u8v9kvwbwrwkjvpu",
+                "universityCode": "001258",
+                "universityNameCn": "伟谷州立大学",
+                "universityNameFn": "Grand Valley State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4a1lbq3bljtqhzvd",
+                "universityCode": "005278",
+                "universityNameCn": "格林维尔技术学院",
+                "universityNameFn": "Greenville Technical College"
+            }
+        ],
+        "A": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ysgel1in1w1igllw",
+                "universityCode": "002003",
+                "universityNameCn": "艾德菲大学",
+                "universityNameFn": "Adelphi University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "bgzqriafx7j48784",
+                "universityCode": "005037",
+                "universityNameCn": "艾肯技术学院",
+                "universityNameFn": "Aiken Technical College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "r7k8jlb1f1fqtctd",
+                "universityCode": "001007",
+                "universityNameCn": "阿尔比恩学院",
+                "universityNameFn": "Albion College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ivfm3x5n5udkw48p",
+                "universityCode": "002486",
+                "universityNameCn": "美国洲际大学亚特兰大分校",
+                "universityNameFn": "American InterContinental University - Atlanta"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "rg64xnnnse09mqiu",
+                "universityCode": "002103",
+                "universityNameCn": "美国音乐戏剧学院",
+                "universityNameFn": "American Musical and Dramatic Academy"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "6qbs935lnj4zb1h0",
+                "universityCode": "006000",
+                "universityNameCn": "美国公立大学系统",
+                "universityNameFn": "American Public University System"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "b43029u3l2lk1mu6",
+                "universityCode": "001016",
+                "universityNameCn": "印第安纳州安德森大学",
+                "universityNameFn": "Anderson University - Indiana"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "s97x91ezjh5egqfu",
+                "universityCode": "004014",
+                "universityNameCn": "阿拉珀霍社区学院",
+                "universityNameFn": "Arapahoe Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "pr2szk0n354ybr7b",
+                "universityCode": "004007",
+                "universityNameCn": "亚利桑那州立大学本科招生办公室",
+                "universityNameFn": "Arizona State University - Undergraduate Adm."
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "mtjce9z7ccytb3gp",
+                "universityCode": "006418",
+                "universityNameCn": "阿斯福德大学",
+                "universityNameFn": "Ashford University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "evr5bsse8071vfah",
+                "universityCode": "003656",
+                "universityNameCn": "阿斯南塔克社区学院",
+                "universityNameFn": "Asnuntuck Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "xec25sd00heo1sen",
+                "universityCode": "004596",
+                "universityNameCn": "阿苏萨太平洋大学",
+                "universityNameFn": "Azusa Pacific University"
+            }
+        ],
+        "B": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "fyifbdzk9m1mz4yu",
+                "universityCode": "001051",
+                "universityNameCn": "鲍尔州立大学",
+                "universityNameFn": "Ball State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "iq5nx2cmi7meikiv",
+                "universityCode": "005053",
+                "universityNameCn": "巴里大学",
+                "universityNameFn": "Barry University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "mwsaib9tzzrw77yj",
+                "universityCode": "006032",
+                "universityNameCn": "贝勒大学",
+                "universityNameFn": "Baylor University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "vgzqvi0p6jrcp1gh",
+                "universityCode": "001058",
+                "universityNameCn": "贝尔蒙特大学",
+                "universityNameFn": "Belmont University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4s41hudpwofl8wx9",
+                "universityCode": "003107",
+                "universityNameCn": "伯克利音乐学院",
+                "universityNameFn": "Berklee College of Music"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ad8suq5akc297aod",
+                "universityCode": "006034",
+                "universityNameCn": "贝森尼学院（堪萨斯州）",
+                "universityNameFn": "Bethany College (KS)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "aqah8dtxassudrgr",
+                "universityCode": "004017",
+                "universityNameCn": "百欧拉大学",
+                "universityNameFn": "Biola University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "5n29nlunsybib6hz",
+                "universityCode": "002646",
+                "universityNameCn": "宾州布鲁姆斯堡大学",
+                "universityNameFn": "Bloomsburg University of Pennsylvania"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ijvuu6jzr4varw3d",
+                "universityCode": "004025",
+                "universityNameCn": "蓝山社区学院",
+                "universityNameFn": "Blue Mountain Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "luocpuomua4bmy8k",
+                "universityCode": "006791",
+                "universityNameCn": "布兰德曼大学",
+                "universityNameFn": "Brandman University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "em6zjb8xxn5rq7hz",
+                "universityCode": "003517",
+                "universityNameCn": "布里奇沃特圣大学",
+                "universityNameFn": "Bridgewater St Univ"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "fgnid33yqrbzbn9f",
+                "universityCode": "004019",
+                "universityNameCn": "杨百翰大学",
+                "universityNameFn": "Brigham Young University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "kjf5xqg62pfatwot",
+                "universityCode": "004106",
+                "universityNameCn": "杨百翰大学夏威夷分校",
+                "universityNameFn": "Brigham Young University Hawaii"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "2waneyjzkubn3vkn",
+                "universityCode": "004657",
+                "universityNameCn": "杨百翰大学爱达荷分校",
+                "universityNameFn": "Brigham Young University Idaho"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "qbmjppai4zo6oyqf",
+                "universityCode": "002181",
+                "universityNameCn": "布鲁克代尔社区学院",
+                "universityNameFn": "Brookdale Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "9jdj9k75takv1nhm",
+                "universityCode": "004228",
+                "universityNameCn": "布鲁克斯摄影学院",
+                "universityNameFn": "Brooks Institute"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "b18udx4qy0h8ovs6",
+                "universityCode": "002018",
+                "universityNameCn": "布莱恩斯特拉顿学院奥尔巴尼校区",
+                "universityNameFn": "Bryant & Stratton College - Albany"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "e30dpyw97cr7efng",
+                "universityCode": "003331",
+                "universityNameCn": "布莱恩斯特拉顿学院阿莫斯特校区",
+                "universityNameFn": "Bryant & Stratton College - Amherst"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "auoalugovdtgtla9",
+                "universityCode": "002058",
+                "universityNameCn": "布莱恩斯特拉顿学院布法罗校区",
+                "universityNameFn": "Bryant & Stratton College - Buffalo"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "7sohr26t3m2aljjv",
+                "universityCode": "000814",
+                "universityNameCn": "布莱恩斯特拉顿学院东湖校区",
+                "universityNameFn": "Bryant & Stratton College - Eastlake"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ppuzwkny5dsduin0",
+                "universityCode": "003236",
+                "universityNameCn": "布莱恩斯特拉顿学院汉普顿校区",
+                "universityNameFn": "Bryant & Stratton College - Hampton"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "uocw3ll7drck7jlc",
+                "universityCode": "007327",
+                "universityNameCn": "布莱恩斯特拉顿学院亨里埃塔校区",
+                "universityNameFn": "Bryant & Stratton College - Henrietta"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "f3nkvjdm7xekkodz",
+                "universityCode": "000577",
+                "universityNameCn": "布莱恩斯特拉顿学院帕尔马校区",
+                "universityNameFn": "Bryant & Stratton College - Parma"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "y2smsy9edoazcip4",
+                "universityCode": "004762",
+                "universityNameCn": "布莱恩斯特拉顿学院里士满校区",
+                "universityNameFn": "Bryant & Stratton College - Richmond"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "rfyut352tszly4um",
+                "universityCode": "003328",
+                "universityNameCn": "布莱恩斯特拉顿学院南镇校区",
+                "universityNameFn": "Bryant & Stratton College - Southtowns"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ebcnmnpygsy9fyam",
+                "universityCode": "000654",
+                "universityNameCn": "布莱恩斯特拉顿学院锡拉丘兹校区",
+                "universityNameFn": "Bryant & Stratton College - Syracuse"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "z9bsv4o1ea43luf1",
+                "universityCode": "004761",
+                "universityNameCn": "布莱恩斯特拉顿学院弗吉尼亚海滩校区",
+                "universityNameFn": "Bryant & Stratton College - Virginia Beach"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4tdivnmn0gbaseaq",
+                "universityCode": "003617",
+                "universityNameCn": "布莱恩斯特拉顿学院沃瓦托萨校区",
+                "universityNameFn": "Bryant & Stratton College - Wauwatosa"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "qiurgqis4gg3ka3x",
+                "universityCode": "002066",
+                "universityNameCn": "雄鹿县社区学院",
+                "universityNameFn": "Bucks County Community College"
+            }
+        ],
+        "C": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "3cq4o2w1iqt809vs",
+                "universityCode": "002071",
+                "universityNameCn": "卡布里尼学院",
+                "universityNameFn": "Cabrini College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "c18n1o39ahwtossg",
+                "universityCode": "004049",
+                "universityNameCn": "加州艺术学院",
+                "universityNameFn": "California Institute of the Arts"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "bzv9nbvpz5wdzgio",
+                "universityCode": "004038",
+                "universityNameCn": "加州州立理工大学圣路易斯奥比斯波分校",
+                "universityNameFn": "California Polytechnic State Univ - SLO"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "83srisf50le0s880",
+                "universityCode": "004082",
+                "universityNameCn": "加州州立理工大学波莫纳分校",
+                "universityNameFn": "California State Polytechnic University, Pomona"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "42l0wbidxqtl8ky6",
+                "universityCode": "004128",
+                "universityNameCn": "加州州立大学海峡群岛分校",
+                "universityNameFn": "California State University - Channel Islands"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "sfityglxilkpt5s0",
+                "universityCode": "004098",
+                "universityNameCn": "加州州立大学多多明格兹岗分校",
+                "universityNameFn": "California State University - Dominguez Hills"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ue7umrzveobenb1j",
+                "universityCode": "004589",
+                "universityNameCn": "加州州立大学富尔顿分校",
+                "universityNameFn": "California State University - Fullerton"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "712yd9iscd60ip04",
+                "universityCode": "004399",
+                "universityNameCn": "加州州立大学洛杉矶分校",
+                "universityNameFn": "California State University - Los Angeles"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "h6xbm5seo0z6iaxh",
+                "universityCode": "005677",
+                "universityNameCn": "加州州立大学圣马科斯分校",
+                "universityNameFn": "California State University - San Marcos"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "96d5kzyuuz28wnnc",
+                "universityCode": "003421",
+                "universityNameCn": "首都社区学院",
+                "universityNameFn": "Capital Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "wer6b25aht3l6tr2",
+                "universityCode": "003898",
+                "universityNameCn": "康涅狄格州中央州立大学招生办公室",
+                "universityNameFn": "Central Connecticut State University Admissions"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "6lus3yl3o5e6fqf1",
+                "universityCode": "001106",
+                "universityNameCn": "中央密歇根大学",
+                "universityNameFn": "Central Michigan University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "tni8y64frzxhd0y5",
+                "universityCode": "003387",
+                "universityNameCn": "新墨西哥中央社区学院",
+                "universityNameFn": "Central NM Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "anurxu2bmjpaufu5",
+                "universityCode": "006466",
+                "universityNameCn": "查德隆州立学院",
+                "universityNameFn": "Chadron State College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "f4ls2l32c7l8rmou",
+                "universityCode": "004745",
+                "universityNameCn": "奇摩卡塔社区学院",
+                "universityNameFn": "Chemeketa Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "9rb863znc8c7ly1e",
+                "universityCode": "005109",
+                "universityNameCn": "克拉夫林大学",
+                "universityNameFn": "Claflin University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "7a0jgnwtio5a3lz2",
+                "universityCode": "004089",
+                "universityNameCn": "克拉特索普社区学院",
+                "universityNameFn": "Clatsop Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "vtfdrhayq41mdcz3",
+                "universityCode": "005111",
+                "universityNameCn": "克莱姆森大学本科教育",
+                "universityNameFn": "Clemson University - Undergraduate Programs"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "3o4lj8h6fv3cq4gr",
+                "universityCode": "001221",
+                "universityNameCn": "克利夫兰州立大学",
+                "universityNameFn": "Cleveland State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "s65igso3woynavi8",
+                "universityCode": "001712",
+                "universityNameCn": "科科尼诺社区学院",
+                "universityNameFn": "Coconino Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ofgmo3qsa7624qfn",
+                "universityCode": "005113",
+                "universityNameCn": "查尔斯顿学院",
+                "universityNameFn": "College of Charleston"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "0d6twfogynyxzw8h",
+                "universityCode": "004085",
+                "universityNameCn": "沙漠学院",
+                "universityNameFn": "College of the Desert"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "6yg57etby820gxw9",
+                "universityCode": "004665",
+                "universityNameCn": "科罗拉多西北社区学院",
+                "universityNameFn": "Colorado Northwestern Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "hdo3v70n1fstub2l",
+                "universityCode": "004611",
+                "universityNameCn": "科罗拉多州立大学普韦布洛分校",
+                "universityNameFn": "Colorado State University - Pueblo"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "mfejnduc3gpurj04",
+                "universityCode": "004075",
+                "universityNameCn": "科罗拉多州立大学本科校区",
+                "universityNameFn": "Colorado State University - Undergraduate"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "8rd08ss0xy6tp6mj",
+                "universityCode": "006903",
+                "universityNameCn": "科罗拉多州立大学全球校园",
+                "universityNameFn": "Colorado State University-Global Campus"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "99hbgg44urn6j1uz",
+                "universityCode": "004133",
+                "universityNameCn": "罗拉多技术大学斯普林斯分校",
+                "universityNameFn": "Colorado Technical University - Colorado Springs"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ahy277dnp4rym703",
+                "universityCode": "005117",
+                "universityNameCn": "哥伦比亚学院南卡罗莱纳州本科校区",
+                "universityNameFn": "Columbia College (SC) - Undergraduate"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "vtlc2wvy5xvxmi1y",
+                "universityCode": "001135",
+                "universityNameCn": "芝加哥哥伦比亚学院",
+                "universityNameFn": "Columbia College Chicago"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "zinlcbfobegyhqrg",
+                "universityCode": "003185",
+                "universityNameCn": "哥伦比亚峡谷社区学院",
+                "universityNameFn": "Columbia Gorge Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "dxrwwd3q9ohj410h",
+                "universityCode": "001148",
+                "universityNameCn": "哥伦布州立社区学院",
+                "universityNameFn": "Columbus State Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "zhua2zd06ut1tlsy",
+                "universityCode": "000969",
+                "universityNameCn": "奥罗拉社区学院",
+                "universityNameFn": "Community College of Aurora"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4eh9mu9nw0vuxfmi",
+                "universityCode": "004137",
+                "universityNameCn": "丹佛社区学院",
+                "universityNameFn": "Community College of Denver"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1f91nwa84it1hxp4",
+                "universityCode": "002682",
+                "universityNameCn": "费城社区学院",
+                "universityNameFn": "Community College of Philadelphia"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "g0msaec95qbqwhl5",
+                "universityCode": "006114",
+                "universityNameCn": "美国协和大学圣保罗分校",
+                "universityNameFn": "Concordia University St. Paul"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "iz1b0iifzx4fqcyu",
+                "universityCode": "005121",
+                "universityNameCn": "康威斯学院",
+                "universityNameFn": "Converse College"
+            }
+        ],
+        "L": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "crf5t67hag946yx8",
+                "universityCode": "002380",
+                "universityNameCn": "纽约利姆时尚商业管理学院",
+                "universityNameFn": "LIM College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1zeanlpthoqnnkcu",
+                "universityCode": "004382",
+                "universityNameCn": "拉马尔社区学院",
+                "universityNameFn": "Lamar Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "zi8x26q65fysck9c",
+                "universityCode": "004407",
+                "universityNameCn": "雷恩社区学院",
+                "universityNameFn": "Lane Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "hx92fv5u8baoacr5",
+                "universityCode": "001399",
+                "universityNameCn": "劳伦斯理工大学",
+                "universityNameFn": "Lawrence Technological University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ri1fz1anhrhqwb81",
+                "universityCode": "002381",
+                "universityNameCn": "利海卡本社区学院",
+                "universityNameFn": "Lehigh Carbon Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4ebzjpgy7yuehea7",
+                "universityCode": "005385",
+                "universityNameCn": "利伯缇大学",
+                "universityNameFn": "Liberty University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "u24cb12dy95m52xy",
+                "universityCode": "005366",
+                "universityNameCn": "莱姆斯通学院",
+                "universityNameFn": "Limestone College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "q4dlxnpdeim2apwq",
+                "universityCode": "004413",
+                "universityNameCn": "林本顿社区学院",
+                "universityNameFn": "Linn-Benton Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "8kyujlroy2ngl375",
+                "universityCode": "002369",
+                "universityNameCn": "长岛大学布鲁克林校区",
+                "universityNameFn": "Long Island University - Brooklyn"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "u6z8vy4pw6xrlg5t",
+                "universityCode": "002070",
+                "universityNameCn": "长岛大学波斯特分校",
+                "universityNameFn": "Long Island University - Post Campus"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "s0bsh2rut01gabx8",
+                "universityCode": "001412",
+                "universityNameCn": "芝加哥洛约拉大学",
+                "universityNameFn": "Loyola University Chicago"
+            }
+        ],
+        "M": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "qg2xew3fsosov3nb",
+                "universityCode": "001536",
+                "universityNameCn": "麦迪逊大学（麦迪逊技术学院）",
+                "universityNameFn": "Madison College (Madison Area Technical College)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ja604slnwcil347n",
+                "universityCode": "003544",
+                "universityNameCn": "曼彻斯特社区学院",
+                "universityNameFn": "Manchester Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "3yx5vln2mvxgf2ga",
+                "universityCode": "005399",
+                "universityNameCn": "马里兰艺术学院",
+                "universityNameFn": "Maryland Institute College of Art"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ac48qfy3c46gdbxy",
+                "universityCode": "004515",
+                "universityNameCn": "玛丽蒙特加利福尼亚大学",
+                "universityNameFn": "Marymount California University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "y98clpweqzwgtxac",
+                "universityCode": "003516",
+                "universityNameCn": "麻省艺术与设计学院",
+                "universityNameFn": "Massachusetts College of Art and Design"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "tkvl0o6n85vcuwy4",
+                "universityCode": "003887",
+                "universityNameCn": "麦克肯商业技术学校黑索顿分校",
+                "universityNameFn": "McCann School of Business & Technology - Hazelton"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "f9lhs4p4zzgqmk89",
+                "universityCode": "003296",
+                "universityNameCn": "麦克肯商业技术学校波茨维尔分校",
+                "universityNameFn": "McCann School of Business & Technology - Pottsville"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "a7ja61dmgko46y7u",
+                "universityCode": "003298",
+                "universityNameCn": "麦克肯商业技术学校森伯里分校",
+                "universityNameFn": "McCann School of Business & Technology - Sunbury"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "fj78rruiz0e8bt6i",
+                "universityCode": "007392",
+                "universityNameCn": "麦克肯商业技术学校艾伦镇分校",
+                "universityNameFn": "McCann School of Business and Technology - Allentown"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "jd27t5mmihqm1hhd",
+                "universityCode": "004505",
+                "universityNameCn": "丹佛大都会州立大学",
+                "universityNameFn": "Metro State University of Denver"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "nrng8mwxa4ifgpvv",
+                "universityCode": "001465",
+                "universityNameCn": "密歇根州立大学",
+                "universityNameFn": "Michigan State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "px7evgd0kx3gcljq",
+                "universityCode": "001523",
+                "universityNameCn": "中密歇根社区学院",
+                "universityNameFn": "Mid Michigan Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "l4gedw6q27ozl459",
+                "universityCode": "000918",
+                "universityNameCn": "中美基督教大学",
+                "universityNameFn": "Mid-America Christian University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "5k3y5t46yuqm5r8x",
+                "universityCode": "003554",
+                "universityNameCn": "米德尔塞克斯社区学院",
+                "universityNameFn": "Middlesex Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "z5ldsblup8gra4yx",
+                "universityCode": "003551",
+                "universityNameCn": "米德尔塞克斯社区学院康涅狄格州分校",
+                "universityNameFn": "Middlesex Community College (CT)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "vwk930351ogjf7ah",
+                "universityCode": "003342",
+                "universityNameCn": "米勒模特学院杰克逊维尔校区",
+                "universityNameFn": "Miller-Motte College - Jacksonville"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "iygs2l7z061eyrc9",
+                "universityCode": "003228",
+                "universityNameCn": "米勒莫特技术学院克拉克斯维尔校区",
+                "universityNameFn": "Miller-Motte Technical College - Clarksville"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "3qe1m1kjgg3up0vm",
+                "universityCode": "002656",
+                "universityNameCn": "宾州米勒斯维尔大学",
+                "universityNameFn": "Millersville University of Pennsylvania"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "jop2jh5bmc0o2yqu",
+                "universityCode": "001471",
+                "universityNameCn": "米尔萨普斯学院",
+                "universityNameFn": "Millsaps College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "q3lfoj3pczmmniz2",
+                "universityCode": "001476",
+                "universityNameCn": "密尔沃基工程学院",
+                "universityNameFn": "Milwaukee School of Engineering"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "emay1p8tinwl1gbd",
+                "universityCode": "006677",
+                "universityNameCn": "明尼苏达州立大学曼卡托分校",
+                "universityNameFn": "Minnesota State University - Mankato"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "bdjsuutdg6r4976v",
+                "universityCode": "002520",
+                "universityNameCn": "蒙特克莱尔州立大学（本科招生办公室）",
+                "universityNameFn": "Montclair State University (Undergraduate Admissions)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "x8gsxborosqau1la",
+                "universityCode": "005440",
+                "universityNameCn": "蒙哥马利学院",
+                "universityNameFn": "Montgomery College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4nc3rba1n4gnspyw",
+                "universityCode": "000444",
+                "universityNameCn": "摩根社区学院",
+                "universityNameFn": "Morgan Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "uz6634d7xrpzejhq",
+                "universityCode": "005416",
+                "universityNameCn": "摩根州立大学",
+                "universityNameFn": "Morgan State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ru6y076jrd98k99p",
+                "universityCode": "002423",
+                "universityNameCn": "圣玛丽山学院",
+                "universityNameFn": "Mount Saint Mary College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "o2sa23voz6mnx9jb",
+                "universityCode": "004508",
+                "universityNameCn": "胡德雪山社区学院",
+                "universityNameFn": "Mt. Hood Community College"
+            }
+        ],
+        "N": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "m83201wpvegzgcwa",
+                "universityCode": "003550",
+                "universityNameCn": "诺格塔克谷社区学院",
+                "universityNameFn": "Naugatuck Valley Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ghqdwz8xoydr6qbu",
+                "universityCode": "03550R",
+                "universityNameCn": "诺格塔克谷社区学院注册办公室",
+                "universityNameFn": "Naugatuck Valley Community College Registrar"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4say00pu3rvvh0br",
+                "universityCode": "004531",
+                "universityNameCn": "新墨西哥州立大学",
+                "universityNameFn": "New Mexico State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ee346m9i7j43qf6z",
+                "universityCode": "005493",
+                "universityNameCn": "纽柏利学院",
+                "universityNameFn": "Newberry College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "9srpe84yn2bxgpw7",
+                "universityCode": "005498",
+                "universityNameCn": "北格林维尔大学",
+                "universityNameFn": "North Greenville University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ii9u44wdt2nf9gvl",
+                "universityCode": "004537",
+                "universityNameCn": "东北初级学院",
+                "universityNameFn": "Northeastern Junior College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "t7kvvolm7a9da66d",
+                "universityCode": "004006",
+                "universityNameCn": "北亚利桑那大学",
+                "universityNameFn": "Northern Arizona University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "3msd8lcp66b2nm65",
+                "universityCode": "001559",
+                "universityNameCn": "北伊利诺伊大学",
+                "universityNameFn": "Northern Illinois University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "hbgspglywrg94vbj",
+                "universityCode": "003652",
+                "universityNameCn": "西北康涅狄格社区学院",
+                "universityNameFn": "Northwestern Connecticut Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "v8lws22k6gby2zqk",
+                "universityCode": "001568",
+                "universityNameCn": "诺斯伍德大学",
+                "universityNameFn": "Northwood University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4sbd0q6l5q3g3km0",
+                "universityCode": "003677",
+                "universityNameCn": "纽沃克社区学院招生办公室",
+                "universityNameFn": "Norwalk Community College Admissions"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "hy9v2oi26inh5fo6",
+                "universityCode": "003669",
+                "universityNameCn": "诺威治大学",
+                "universityNameFn": "Norwich University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "sa3lgwtpnyrmdtym",
+                "universityCode": "005114",
+                "universityNameCn": "马里兰圣母学院",
+                "universityNameFn": "Notre Dame of Maryland University"
+            }
+        ],
+        "O": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "26g60j5bij7ex9i8",
+                "universityCode": "005126",
+                "universityNameCn": "老道明大学",
+                "universityNameFn": "Old Dominion University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "58vomssmgcx4tugj",
+                "universityCode": "005527",
+                "universityNameCn": "奥兰治堡卡尔霍恩技术学院",
+                "universityNameFn": "Orangeburg-Calhoun Technical College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "mplzxz3b2op05k4b",
+                "universityCode": "004587",
+                "universityNameCn": "俄勒冈理工学院",
+                "universityNameFn": "Oregon Institute of Technology"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "abs5d74gq6fqf78y",
+                "universityCode": "004586",
+                "universityNameCn": "俄勒冈州立大学",
+                "universityNameFn": "Oregon State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "t2g01lgam0jgdp5l",
+                "universityCode": "004588",
+                "universityNameCn": "奥特罗初级学院",
+                "universityNameFn": "Otero Junior College"
+            }
+        ],
+        "H": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "96pb77rlb3jcavjm",
+                "universityCode": "002287",
+                "universityNameCn": "哈克姆大学",
+                "universityNameFn": "Harcum College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "nr0q3k1au7u6l4h2",
+                "universityCode": "000338",
+                "universityNameCn": "荷晶大学基诺沙分校",
+                "universityNameFn": "Herzing University - Kenosha"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "e3zic7hcphd46wuo",
+                "universityCode": "000388",
+                "universityNameCn": "荷晶大学麦迪逊分校",
+                "universityNameFn": "Herzing University - Madison"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "pgek9lwvexk96coi",
+                "universityCode": "007277",
+                "universityNameCn": "荷晶大学阿克伦分校",
+                "universityNameFn": "Herzing University Akron"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "fziddydide0dh772",
+                "universityCode": "002295",
+                "universityNameCn": "霍夫斯特拉大学",
+                "universityNameFn": "Hofstra University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "h6hux3fm7jnb1lux",
+                "universityCode": "001309",
+                "universityNameCn": "圣十字学院",
+                "universityNameFn": "Holy Cross College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "b8n5o54h3lhqlo9j",
+                "universityCode": "005305",
+                "universityNameCn": "豪利乔治敦技术学院",
+                "universityNameFn": "Horry-Georgetown Technical College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "91z5cz2daaex251g",
+                "universityCode": "003446",
+                "universityNameCn": "休萨托尼克社区学院",
+                "universityNameFn": "Housatonic Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "iplmq4u72n11yzq7",
+                "universityCode": "005308",
+                "universityNameCn": "霍华德社区学院",
+                "universityNameFn": "Howard Community College"
+            }
+        ],
+        "I": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "athig62ivuqf92si",
+                "universityCode": "001319",
+                "universityNameCn": "伊利诺伊州立大学",
+                "universityNameFn": "Illinois State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "grywr5mdxll1nrzw",
+                "universityCode": "004358",
+                "universityNameCn": "帝王谷学院",
+                "universityNameFn": "Imperial Valley College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4pkn6n6zj8klz6eh",
+                "universityCode": "001322",
+                "universityNameCn": "印第安纳州立大学",
+                "universityNameFn": "Indiana State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "y210sb4jxp87iqu9",
+                "universityCode": "004216",
+                "universityNameCn": "美国印第安纳大学——普渡大学哥伦布分校",
+                "universityNameFn": "Indiana Univ Purdue Univ Columbus"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "xqlmgucxphc0xmiw",
+                "universityCode": "001325",
+                "universityNameCn": "美国印第安纳大学——普渡大学印第安纳波利斯分校",
+                "universityNameFn": "Indiana Univ Purdue Univ Indianapolis"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "doims66akakfhyw9",
+                "universityCode": "001324",
+                "universityNameCn": "印第安纳大学布卢明顿校区本科招生办公室",
+                "universityNameFn": "Indiana University - Bloomington (Undergraduate Admissions)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "d470og41zi2rkj16",
+                "universityCode": "001337",
+                "universityNameCn": "印第安纳大学科科莫分校",
+                "universityNameFn": "Indiana University - Kokomo"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4xncsn94um4ceht8",
+                "universityCode": "001339",
+                "universityNameCn": "印第安纳大学南本德分校",
+                "universityNameFn": "Indiana University - South Bend"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "z6rqlroq03bes25m",
+                "universityCode": "001194",
+                "universityNameCn": "印第安纳大学东分校",
+                "universityNameFn": "Indiana University East"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "zrqv2my2kwwrniy6",
+                "universityCode": "001338",
+                "universityNameCn": "印第安纳大学西北分校",
+                "universityNameFn": "Indiana University Northwest"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "bkhnotw7l2xc1ahk",
+                "universityCode": "001314",
+                "universityNameCn": "印第安纳大学东南分校",
+                "universityNameFn": "Indiana University Southeast"
+            }
+        ],
+        "J": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "fkl9z8rwszlcikmb",
+                "universityCode": "005331",
+                "universityNameCn": "杰克逊维尔大学",
+                "universityNameFn": "Jacksonville University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "sll01y0xqatcgih2",
+                "universityCode": "005333",
+                "universityNameCn": "约翰逊C.史密斯大学",
+                "universityNameFn": "Johnson C. Smith University"
+            }
+        ],
+        "K": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "3p02u6k0fpsaqkag",
+                "universityCode": "006337",
+                "universityNameCn": "堪萨斯卫斯理大学",
+                "universityNameFn": "Kansas Wesleyan University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "5bd8w86ta0azd9tu",
+                "universityCode": "003388",
+                "universityNameCn": "卡普兰在线大学",
+                "universityNameFn": "Kaplan University Online"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "axhkc14savny3iae",
+                "universityCode": "005359",
+                "universityNameCn": "肯尼绍州立大学",
+                "universityNameFn": "Kennesaw State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "yeubcusrgvpz5l3x",
+                "universityCode": "001367",
+                "universityNameCn": "肯特州立大学",
+                "universityNameFn": "Kent State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "cu0r1xfbhn1zp6dw",
+                "universityCode": "001368",
+                "universityNameCn": "肯塔基州立大学",
+                "universityNameFn": "Kentucky State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "kyjcyfuifgtiv8ra",
+                "universityCode": "004127",
+                "universityNameCn": "克拉马斯社区学院",
+                "universityNameFn": "Klamath Community College"
+            }
+        ],
+        "U": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "sxlpri7celvceek7",
+                "universityCode": "004862",
+                "universityNameCn": "乌姆普夸社区学院",
+                "universityNameFn": "Umpqua Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "z10o96iq3ziuu7qg",
+                "universityCode": "004896",
+                "universityNameCn": "阿拉斯加大学安克雷奇校区",
+                "universityNameFn": "University of Alaska (UAA) - Anchorage Campus"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "5h2mlzm1ry7w3v6q",
+                "universityCode": "004866",
+                "universityNameCn": "阿拉斯加大学费尔班克斯校区",
+                "universityNameFn": "University of Alaska (UAF) - Fairbanks Campus"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "t9areafhnbtoe5jv",
+                "universityCode": "004897",
+                "universityNameCn": "阿拉斯加大学朱诺校区",
+                "universityNameFn": "University of Alaska (UAS) - Juneau Campus"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "5zaoracm8kd9s5kp",
+                "universityCode": "004836",
+                "universityNameCn": "加利福尼亚大学圣地亚哥校区本科招生办公室",
+                "universityNameFn": "University of California - San Diego (Undergraduate Admissions)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "t18bf1k9k9ur862d",
+                "universityCode": "004860",
+                "universityNameCn": "加利福尼亚大学圣克鲁兹校区",
+                "universityNameFn": "University of California - Santa Cruz"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "czxj0xcthcbv6y3x",
+                "universityCode": "006091",
+                "universityNameCn": "中央俄克拉荷马大学",
+                "universityNameFn": "University of Central Oklahoma"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "yy9mss3jmotk1o4h",
+                "universityCode": "004874",
+                "universityNameCn": "科罗拉多大学科泉分校",
+                "universityNameFn": "University of Colorado - Colorado Springs"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "m163rff6kvcddcay",
+                "universityCode": "004841",
+                "universityNameCn": "科罗拉多大学博尔德分校",
+                "universityNameFn": "University of Colorado Boulder"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1qo50rm9lsgioapk",
+                "universityCode": "001835",
+                "universityNameCn": "底特律梅西大学",
+                "universityNameFn": "University of Detroit Mercy"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ncc2k51tn0xmc8yd",
+                "universityCode": "001223",
+                "universityNameCn": "芬德利大学",
+                "universityNameFn": "University of Findlay"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "w7a6azutdtxzmrt8",
+                "universityCode": "005812",
+                "universityNameCn": "佛罗里达大学",
+                "universityNameFn": "University of Florida"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ngxz8zuew2ltnmcp",
+                "universityCode": "005813",
+                "universityNameCn": "乔治亚大学",
+                "universityNameFn": "University of Georgia"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "w4x226iy7gfcn17r",
+                "universityCode": "003436",
+                "universityNameCn": "哈特福德大学",
+                "universityNameFn": "University of Hartford"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "u69w3iaqh49ur2hx",
+                "universityCode": "001321",
+                "universityNameCn": "印第安纳波利斯大学",
+                "universityNameFn": "University of Indianapolis"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "t28sz7k0mlmh5aag",
+                "universityCode": "001838",
+                "universityNameCn": "路易斯维尔大学",
+                "universityNameFn": "University of Louisville"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "sf7eq5s522n90kq1",
+                "universityCode": "005814",
+                "universityNameCn": "马里兰大学帕克学院",
+                "universityNameFn": "University of Maryland - College Park"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "j54124uvsa71nk0r",
+                "universityCode": "000551",
+                "universityNameCn": "马里兰大学大学学院分校",
+                "universityNameFn": "University of Maryland - University College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "hqz9k91v8j929s3q",
+                "universityCode": "001840",
+                "universityNameCn": "密西西比大学",
+                "universityNameFn": "University of Mississippi"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "i7bcn3dz4y95zhzs",
+                "universityCode": "006420",
+                "universityNameCn": "内布拉斯加大学奥马哈分校",
+                "universityNameFn": "University of Nebraska Omaha"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "tbh0evhsxrq4n9ba",
+                "universityCode": "004845",
+                "universityNameCn": "新墨西哥大学招生办公室",
+                "universityNameFn": "University of New Mexico - Admissions"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "eybylippi28cdi4v",
+                "universityCode": "005105",
+                "universityNameCn": "北卡罗莱纳大学夏洛特分校",
+                "universityNameFn": "University of North Carolina - Charlotte"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "dby8n5cl23a4t18v",
+                "universityCode": "004074",
+                "universityNameCn": "北科罗拉多大学本科招生办公室",
+                "universityNameFn": "University of Northern Colorado - UNDERGRADUATE ADMISSIONS"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "kuoj9bmnio0gaz6h",
+                "universityCode": "004846",
+                "universityNameCn": "俄勒冈大学",
+                "universityNameFn": "University of Oregon"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "nl5540mdjiu1gakc",
+                "universityCode": "001024",
+                "universityNameCn": "凤凰城大学学生招生办公室",
+                "universityNameFn": "University of Phoenix - Student Admissions"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "qi4y6bbzbwi22gz0",
+                "universityCode": "001625",
+                "universityNameCn": "派克维尔大学",
+                "universityNameFn": "University of Pikeville"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "42m2pcawl1t4vecd",
+                "universityCode": "002927",
+                "universityNameCn": "匹兹堡大学",
+                "universityNameFn": "University of Pittsburgh"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1u18gelg7gp141te",
+                "universityCode": "005845",
+                "universityNameCn": "南卡罗莱纳大学博福特分校",
+                "universityNameFn": "University of South Carolina - Beaufort"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "9d1o4dhei3vh3n7z",
+                "universityCode": "005818",
+                "universityNameCn": "南卡罗莱纳大学哥伦比亚分校",
+                "universityNameFn": "University of South Carolina - Columbia"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ufeh0g429b2vw2li",
+                "universityCode": "005849",
+                "universityNameCn": "南卡罗莱纳大学兰卡斯特分校",
+                "universityNameFn": "University of South Carolina - Lancaster"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ku3y4vjro9kojarc",
+                "universityCode": "005847",
+                "universityNameCn": "南卡罗莱纳大学索克亥奇分校",
+                "universityNameFn": "University of South Carolina - Salkehatchie"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "vkz1mp0h123tkefs",
+                "universityCode": "005821",
+                "universityNameCn": "南卡罗莱纳大学萨姆特分校",
+                "universityNameFn": "University of South Carolina - Sumter"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "eqzyz2orh9d0gfmq",
+                "universityCode": "005846",
+                "universityNameCn": "南卡罗莱纳大学尤尼恩分校",
+                "universityNameFn": "University of South Carolina - Union"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "yqxfhwl2rviutz7k",
+                "universityCode": "005850",
+                "universityNameCn": "南卡罗莱纳北部大学",
+                "universityNameFn": "University of South Carolina Upstate"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "0s515pbb3qha2qps",
+                "universityCode": "001335",
+                "universityNameCn": "南印第安纳大学",
+                "universityNameFn": "University of Southern Indiana"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "tor7q3273qqfpbwu",
+                "universityCode": "006110",
+                "universityNameCn": "圣托马斯大学",
+                "universityNameFn": "University of St. Thomas"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "xyhf8ocu1iso88sv",
+                "universityCode": "006897",
+                "universityNameCn": "德克萨斯大学达拉斯分校",
+                "universityNameFn": "University of Texas - Dallas"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "85uyrit901dxgfoh",
+                "universityCode": "006013",
+                "universityNameCn": "德州大学阿灵顿校区",
+                "universityNameFn": "University of Texas at Arlington"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ss93t0e3y4va66j4",
+                "universityCode": "000982",
+                "universityNameCn": "多伦多大学本科校区",
+                "universityNameFn": "University of Toronto - Undergraduate Only"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "fxs1k5bmxfa9dk5l",
+                "universityCode": "005124",
+                "universityNameCn": "弗吉尼亚大学怀斯校区",
+                "universityNameFn": "University of Virginia - Wise"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "yam96qyozbpx5zxm",
+                "universityCode": "001913",
+                "universityNameCn": "威斯康星大学奥克莱尔分校",
+                "universityNameFn": "University of Wisconsin - Eau Claire"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "6gaui4rzvi29dgfy",
+                "universityCode": "001846",
+                "universityNameCn": "威斯康星大学麦迪逊分校",
+                "universityNameFn": "University of Wisconsin - Madison"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "sy98jhx8hlep9hv4",
+                "universityCode": "001740",
+                "universityNameCn": "威斯康星大学斯托特分校",
+                "universityNameFn": "University of Wisconsin - Stout"
+            }
+        ],
+        "T": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "j4e7mqe147s2b2dx",
+                "universityCode": "002906",
+                "universityNameCn": "天普大学",
+                "universityNameFn": "Temple University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "qtymdmkx8ivsnvcu",
+                "universityCode": "005108",
+                "universityNameCn": "要塞军事学院",
+                "universityNameFn": "The Citadel"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "qh6noi9kxpez9te6",
+                "universityCode": "002871",
+                "universityNameCn": "国王学院",
+                "universityNameFn": "The King's College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "w2mnemq39bb598z5",
+                "universityCode": "002521",
+                "universityNameCn": "新学院",
+                "universityNameFn": "The New School"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "rudpvwpowpyz2n41",
+                "universityCode": "001829",
+                "universityNameCn": "阿克伦大学",
+                "universityNameFn": "The University of Akron"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "m2wumzb8qoi877r7",
+                "universityCode": "001830",
+                "universityNameCn": "阿拉巴马大学",
+                "universityNameFn": "The University of Alabama"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "9n5ika6lam4gtuwa",
+                "universityCode": "005819",
+                "universityNameCn": "坦帕大学",
+                "universityNameFn": "The University of Tampa"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "fsp0ywfknkg9icjm",
+                "universityCode": "003558",
+                "universityNameCn": "三河社区大学本科",
+                "universityNameFn": "Three Rivers Community College Undergraduate (CT)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "w5aqizwrt0y4nguh",
+                "universityCode": "007300",
+                "universityNameCn": "翠贝卡热点学院本科招生办公室",
+                "universityNameFn": "Tribeca Flashpoint College-UNDERGRAD ADMISSIONS"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "nx08abtcob2bdzil",
+                "universityCode": "004821",
+                "universityNameCn": "特立尼达州立初级学院",
+                "universityNameFn": "Trinidad State Junior College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "47e4qqybywmr3eui",
+                "universityCode": "001820",
+                "universityNameCn": "三一基督教学院",
+                "universityNameFn": "Trinity Christian College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "az9g9eff16f7x498",
+                "universityCode": "006832",
+                "universityNameCn": "杜兰大学",
+                "universityNameFn": "Tulane University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "hmrxn0m4ixbrttfu",
+                "universityCode": "003897",
+                "universityNameCn": "堂克西斯社区学院",
+                "universityNameFn": "Tunxis Community College"
+            }
+        ],
+        "W": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "78hnq9tjab9tvdp4",
+                "universityCode": "006469",
+                "universityNameCn": "韦恩州立大学",
+                "universityNameFn": "Wayne State College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ypovufpzsyr2yksb",
+                "universityCode": "002659",
+                "universityNameCn": "宾州西彻斯特大学",
+                "universityNameFn": "West Chester U of PA - Undergrad Admissions"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "9kxsksyr7ruj19we",
+                "universityCode": "005904",
+                "universityNameCn": "西弗吉尼亚大学",
+                "universityNameFn": "West Virginia University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "c9m80br80ic8w3az",
+                "universityCode": "005897",
+                "universityNameCn": "西卡罗莱纳大学",
+                "universityNameFn": "Western Carolina University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "muc9nt1qcoa8ewsr",
+                "universityCode": "003949",
+                "universityNameCn": "西部州长大学",
+                "universityNameFn": "Western Governors University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "xt8ezzbwl5t8m7vj",
+                "universityCode": "004585",
+                "universityNameCn": "西俄勒冈大学",
+                "universityNameFn": "Western Oregon University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "u89h2hhefzxy9zqs",
+                "universityCode": "004947",
+                "universityNameCn": "西华盛顿大学",
+                "universityNameFn": "Western Washington University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "oiqh61q33g2ov3tw",
+                "universityCode": "001906",
+                "universityNameCn": "威尔伯佛斯大学",
+                "universityNameFn": "Wilberforce University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "ww98uut9x9uvox8p",
+                "universityCode": "002518",
+                "universityNameCn": "威廉帕特森大学",
+                "universityNameFn": "William Paterson University of New Jersey"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "f43ns0ghp25pzimm",
+                "universityCode": "005910",
+                "universityNameCn": "温斯洛普大学",
+                "universityNameFn": "Winthrop University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "m8bj7oxj3eewoz11",
+                "universityCode": "005912",
+                "universityNameCn": "沃佛德学院",
+                "universityNameFn": "Wofford College"
+            }
+        ],
+        "V": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "58l5suzl7mgtf4k1",
+                "universityCode": "002001",
+                "universityNameCn": "沃恩航空科技学院",
+                "universityNameFn": "Vaughn College of Aeronautics & Technology"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1onvj1yjfer4pmtj",
+                "universityCode": "001877",
+                "universityNameCn": "文森尼斯大学（所有校区）",
+                "universityNameFn": "Vincennes University (All Campus Locations)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "m0979sw923qoc0iq",
+                "universityCode": "005858",
+                "universityNameCn": "弗吉尼亚军事学院",
+                "universityNameFn": "Virginia Military Institute"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "s9b72jeagve3t07t",
+                "universityCode": "005860",
+                "universityNameCn": "弗吉尼亚州立大学",
+                "universityNameFn": "Virginia State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "js0g7wvxyq2ngof2",
+                "universityCode": "005867",
+                "universityNameCn": "弗吉尼亚卫斯理学院",
+                "universityNameFn": "Virginia Wesleyan College"
+            }
+        ],
+        "Q": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "3216w1zxftrevdgz",
+                "universityCode": "003716",
+                "universityNameCn": "奎因堡谷社区学院",
+                "universityNameFn": "Quinebaug Valley Community College"
+            }
+        ],
+        "P": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1x4l2p4bvjrfxk2v",
+                "universityCode": "002660",
+                "universityNameCn": "宾夕法尼亚州立大学本科招生办公室",
+                "universityNameFn": "Pennsylvania State Univ - Undergraduate Admissions"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "jmti13vcackeaty8",
+                "universityCode": "004630",
+                "universityNameCn": "佩珀代因大学",
+                "universityNameFn": "Pepperdine University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "l5lboqmvdhdwwl1u",
+                "universityCode": "006468",
+                "universityNameCn": "秘鲁州立学院",
+                "universityNameFn": "Peru State College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "g4lw5deay78tcev7",
+                "universityCode": "002666",
+                "universityNameCn": "费城大学",
+                "universityNameFn": "Philadelphia University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "zcfdg24xuk3lnafv",
+                "universityCode": "004291",
+                "universityNameCn": "派克斯峰社区学院",
+                "universityNameFn": "Pikes Peak Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "cwz3gdviz94a2xox",
+                "universityCode": "004605",
+                "universityNameCn": "波因特洛马拿撒勒大学",
+                "universityNameFn": "Point Loma Nazarene University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "dlk099r088rlkimv",
+                "universityCode": "004617",
+                "universityNameCn": "波特兰社区学院",
+                "universityNameFn": "Portland Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "vbjnbqnarzro4m4c",
+                "universityCode": "004610",
+                "universityNameCn": "波特兰州立大学",
+                "universityNameFn": "Portland State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "wh6vkaycxq0dbv30",
+                "universityCode": "002669",
+                "universityNameCn": "普瑞特学院",
+                "universityNameFn": "Pratt Institute"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1o9jtk5t7g5crlto",
+                "universityCode": "004634",
+                "universityNameCn": "普韦布洛社区学院",
+                "universityNameFn": "Pueblo Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "8asgtv7xc2mcpnps",
+                "universityCode": "001638",
+                "universityNameCn": "普渡大学卡鲁梅分校",
+                "universityNameFn": "Purdue University - Calumet"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "30ygfq7fflravqtv",
+                "universityCode": "001640",
+                "universityNameCn": "普渡大学中北分校",
+                "universityNameFn": "Purdue University - North Central"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "dj6kzignc6m4lnma",
+                "universityCode": "001631",
+                "universityNameCn": "普渡大学西拉法叶分校",
+                "universityNameFn": "Purdue University - West Lafayette"
+            }
+        ],
+        "S": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "m6odcrcm7kyce0os",
+                "universityCode": "002544",
+                "universityNameCn": "纽约州立大学普拉茨堡校区",
+                "universityNameFn": "SUNY - Plattsburgh"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "20nfj0s8r1j45z6v",
+                "universityCode": "003522",
+                "universityNameCn": "萨勒姆州立大学",
+                "universityNameFn": "Salem State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "o1n9xd2ilghqflzn",
+                "universityCode": "004682",
+                "universityNameCn": "圣地亚哥州立大学",
+                "universityNameFn": "San Diego State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "icjxfg766j3t3bfg",
+                "universityCode": "004684",
+                "universityNameCn": "旧金山州立大学",
+                "universityNameFn": "San Francisco State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "946ff72ie41h399k",
+                "universityCode": "002052",
+                "universityNameCn": "圣华金谷学院维萨莉亚分校",
+                "universityNameFn": "San Joaquin Valley College - Visalia"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "c5w2if3m77tlg69v",
+                "universityCode": "004687",
+                "universityNameCn": "圣何塞州立大学",
+                "universityNameFn": "San Jose State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "e2hyd0zaa90p3u29",
+                "universityCode": "002835",
+                "universityNameCn": "视觉艺术学校",
+                "universityNameFn": "School of Visual Arts"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "dhz6ld5oyjcy8v74",
+                "universityCode": "003794",
+                "universityNameCn": "波士顿艺术博物馆附设学院",
+                "universityNameFn": "School of the Museum of Fine Arts"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "pdrial6ifqe0xftx",
+                "universityCode": "002811",
+                "universityNameCn": "西顿霍尔大学",
+                "universityNameFn": "Seton Hall University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1ragvd483kdx0pgo",
+                "universityCode": "002658",
+                "universityNameCn": "宾夕法尼亚州滑石大学",
+                "universityNameFn": "Slippery Rock University of Pennsylvania"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "bvlm722vnok4q9ma",
+                "universityCode": "006653",
+                "universityNameCn": "南达科他州立大学",
+                "universityNameFn": "South Dakota State University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "69zhxkqf3kycpd8y",
+                "universityCode": "003662",
+                "universityNameCn": "南康涅狄格州立大学本科招生处",
+                "universityNameFn": "Southern Connecticut State University - Undergraduate Admissions"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1z5v3z1rshhy4x4w",
+                "universityCode": "003649",
+                "universityNameCn": "新罕布什尔南方大学",
+                "universityNameFn": "Southern New Hampshire University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "sj5py7lvce6rw0eu",
+                "universityCode": "004702",
+                "universityNameCn": "南俄勒冈大学",
+                "universityNameFn": "Southern Oregon University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "1ejlm92ud6xq7rl1",
+                "universityCode": "004729",
+                "universityNameCn": "西南俄勒冈社区学院",
+                "universityNameFn": "Southwestern Oregon Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "2mjzcgosrpu6xbp8",
+                "universityCode": "005668",
+                "universityNameCn": "斯巴坦堡社区学院",
+                "universityNameFn": "Spartanburg Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "lvsrxoy4934jaien",
+                "universityCode": "005627",
+                "universityNameCn": "斯巴坦堡卫理公会学院",
+                "universityNameFn": "Spartanburg Methodist College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "eokw4zdin3erjte6",
+                "universityCode": "002802",
+                "universityNameCn": "圣约瑟夫学院纽约布鲁克林校区",
+                "universityNameFn": "St. Joseph's College NY - Brooklyn Campus"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "59glmysmrlpypn3y",
+                "universityCode": "002841",
+                "universityNameCn": "圣约瑟夫学院纽约长岛校区",
+                "universityNameFn": "St. Joseph's College NY - Long Island Campus"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "alqkf0wn8drl1ufg",
+                "universityCode": "001688",
+                "universityNameCn": "斯达克州立大学",
+                "universityNameFn": "Stark State College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "knjewh2haev5hs3w",
+                "universityCode": "005630",
+                "universityNameCn": "斯泰森大学",
+                "universityNameFn": "Stetson University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "4gviqxnzs624ogra",
+                "universityCode": "002889",
+                "universityNameCn": "斯托克顿学院",
+                "universityNameFn": "Stockton University"
+            }
+        ],
+        "R": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "7xtemxqa7dz3wgsa",
+                "universityCode": "005565",
+                "universityNameCn": "瑞德福大学",
+                "universityNameFn": "Radford University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "uiyk1269o8gbs9g6",
+                "universityCode": "002867",
+                "universityNameCn": "拉里坦谷社区学院",
+                "universityNameFn": "Raritan Valley Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "yrc4fihn08dd2sow",
+                "universityCode": "004130",
+                "universityNameCn": "红石社区学院",
+                "universityNameFn": "Red Rocks Community College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "kh2n9j4k0rfytgne",
+                "universityCode": "004452",
+                "universityNameCn": "瑞金大学",
+                "universityNameFn": "Regent University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "fafbual03ll7yk61",
+                "universityCode": "004656",
+                "universityNameCn": "瑞吉斯大学",
+                "universityNameFn": "Regis University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "lew2dxwjs556vome",
+                "universityCode": "001664",
+                "universityNameCn": "瑞盆学院",
+                "universityNameFn": "Ripon College"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "8pfee5xz8cd98ctr",
+                "universityCode": "003728",
+                "universityNameCn": "里韦大学",
+                "universityNameFn": "Rivier University"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "6y438k3lp77hh39e",
+                "universityCode": "002769",
+                "universityNameCn": "罗伯特莫里斯大学宾夕法尼亚校区",
+                "universityNameFn": "Robert Morris University (PA)"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "usvbzfqnbc3r5ofg",
+                "universityCode": "001943",
+                "universityNameCn": "落基山艺术设计学院",
+                "universityNameFn": "Rocky Mountain College of Art and Design"
+            },
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "h82grweyx490cnc3",
+                "universityCode": "004653",
+                "universityNameCn": "罗格社区学院",
+                "universityNameFn": "Rogue Community College"
+            }
+        ],
+        "Y": [
+            {
+                "foreignCountry": "",
+                "needAid": false,
+                "uid": "7z03ztv8qlw251p7",
+                "universityCode": "005989",
+                "universityNameCn": "约克技术学院",
+                "universityNameFn": "York Technical College"
+            }
+        ]
+    },
+    "digitary": [
+        {
+            "foreignCountry": "英国",
+            "needAid": false,
+            "uid": "2nc4bmusmehj1u4y",
+            "universityCode": "lse.ac.uk",
+            "universityNameCn": "伦敦政治经济学院",
+            "universityNameFn": "London School of Economics and Political Science"
+        },
+        {
+            "foreignCountry": "英国",
+            "needAid": false,
+            "uid": "8o2avrrmotvaum2w",
+            "universityCode": "manchester.ac.uk",
+            "universityNameCn": "曼彻斯特大学",
+            "universityNameFn": "University of Manchester"
+        },
+        {
+            "foreignCountry": "澳大利亚",
+            "needAid": false,
+            "uid": "cqjbfjufeg4r41hq",
+            "universityCode": "anu.edu.au",
+            "universityNameCn": "澳大利亚国立大学",
+            "universityNameFn": "Australian National University"
+        },
+        {
+            "foreignCountry": "英国",
+            "needAid": false,
+            "uid": "2nc4bmusmehj1u3y",
+            "universityCode": "cam.ac.uk",
+            "universityNameCn": "剑桥大学",
+            "universityNameFn": "University of Cambridge"
+        },
+        {
+            "foreignCountry": "爱尔兰",
+            "needAid": false,
+            "uid": "o4pq7mg2ivqnl7br",
+            "universityCode": "ul.ie",
+            "universityNameCn": "利默里克大学",
+            "universityNameFn": "University of Limerick"
+        }
+    ],
+    "collegeNet": [
+        {
+            "foreignCountry": "",
+            "needAid": false,
+            "uid": "",
+            "universityCode": "4704",
+            "universityNameCn": "",
+            "universityNameFn": "Stanford University"
+        }
+    ]
+}

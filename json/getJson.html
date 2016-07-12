@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>json数据格式解析-代码优化</title>
+    <meta name="keywords" content="json数据格式解析，代码优化" />
+    <meta name="description" content="通过$.getJSON方法获取json数据格式，然后进行优化处理，加载速度很快，页面优化比较好。很赞！" />
+    <link rel="stylesheet" href="http://my.chsi.com.cn/archive/css/theme/normal/theme_new.css">
+    <link href='http:www.chsi.com.cn/css/en2015.css' rel="stylesheet" type="text/css" />
+    <style type="text/css">
+.listOl{list-style:decimal outside none;padding:0 20px 0 40px}.listOl li{list-style:decimal outside none;line-height:24px}.box950 p a{color:#2EAFBB}.box950 p a:hover{color:#66C8D1}.pleft{padding-left:2em}.content{}.content h3{font-size:16px;font-weight:700;margin:10px}.content h4{font-size:14px;font-weight:700;margin:10px;color:#333}.content p{text-indent:2em;margin:15px 10px 10px}.content div{margin:10px}
+/*Parchment大学筛选*/
+.all_sel{height:23px;line-height:23px;padding:12px 0 17px;}
+.all_sel li {float:left;width:23px;text-align:center;color:#0675c6;cursor:pointer}
+.all_sel li.first {width:34px;}
+.all_sel li.curret {background:#0675c6;color:#fff}
+.college_ftitle{font-size:14px;color:#246897;padding-bottom:5px;}
+.parchmentUniversityList p{margin:10px;text-indent:0;}
+.categoryPart{display:none}
+#tabs,.tab_1{width:100%;}
+    </style>
+</head>
+
+<body>
+    <div class="top_img_banner">
+        <div class="nav_index_wrap">
+            <div class="lm_r_top"><a class="colorOrange" href="/en/index.jsp">Home</a> <span class="colorWhite">/ Help</span></div>
+            <div class="nav_index">Help</div>
+        </div>
+    </div>
+    <div class="box950 clearfix">
+        <div class="logo_lan" style="float:left; margin-top:15px;"><a href="/en/help/howtoapply_c_en.jsp" class="other" style="border-radius:0; height:25px; line-height:25px;">English</a><a style="border-radius:0; height:25px; line-height:25px;">中文</a></div>
+    </div>
+    <div class="box950 clearfix content">
+        
+        <div class='reportIns'>
+          <span class='reportImp'>合作申请分类：</span><br/>
+          <div id='tabs'>
+              <ul class='tab_1'>
+                <li class='selected'><a href="#tabs-0" onClick="prequerymate('0')">ApplyWeb</a></li>
+                <li><a href="#tabs-1" onClick="prequerymate('1')">NSC</a></li>
+                <li><a href="#tabs-2" onClick="prequerymate('2')">Digitary</a></li>
+                <li><a href="#tabs-3" onClick="prequerymate('3')">DUO</a></li>
+                <li><a href="#tabs-4" onClick="prequerymate('4')">Parchment</a></li>
+            </ul>
+            <div class="clearFloat">&nbsp;</div>
+            <div class='tabsDiv' id='tabs-0'>
+                 <div><strong>美国大学网ApplyWeb（申请地址：<a href='http://www.applyweb.com' target="_blank">www.applyweb.com</a>）：</strong><a href="http://www.chsi.com.cn/en/news/201404/20140409/878583440.html" target="_blank">合作机构介绍</a>&nbsp;|&nbsp;<a href="http://www.chsi.com.cn/en/help/howtoapply_c.jsp" target="_blank">如何申请</a></div>
+                   <div><strong>合作的大学：</strong></div>
+                   <div class='nsc_collegenetrequest'>
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>大学名称</th>
+                              </tr>
+                          </thead>
+                          <tbody id='applywebScool'></tbody>
+                      </table>
+                   </div>
+            </div>
+            <div class='tabsDiv' id='tabs-1' style='display:none'>
+                <div><strong>美国学生信息中心NSC（The National Student Clearinghouse）：</strong><a href="http://www.chsi.com.cn/en/news/201404/20140409/878624202.html" target="_blank"> 合作机构介绍</a>&nbsp;|&nbsp;<a href="http://www.chsi.com.cn/en/help/howtoapply_n.jsp" target="_blank">如何申请</a><br/></div>
+                  <div><strong>合作的大学：</strong></div>
+                  <div class='nsc_collegenetrequest'>
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>大学名称</th>
+                                  <th width='120'>是否需要申请码</th>
+                              </tr>
+                          </thead>
+                          <tbody id='nscScool'></tbody>
+                      </table>
+                   </div>
+                   <div style="padding-top:6px; color:#666;">申请码是由所申请的国外大学提供的，大学可以根据用户录入的申请码将收到的认证报告与申请的学生关联起来。</div>
+                  <input type="button" class='buttonA' value="开始" >
+            </div>
+             <div class='tabsDiv' id='tabs-2' style='display:none'>
+                <div><strong>爱尔兰Digitary公司：</strong><a href="http://www.chsi.com.cn/en/news/201605/20160503/1531690413.html" target="_blank"> 合作机构介绍</a>&nbsp;|&nbsp;<a href="http://www.chsi.com.cn/en/help/howtoapply_d.jsp" target="_blank">如何申请</a></div>
+                <div><strong>合作的大学：</strong></div>
+                <div class='nsc_collegenetrequest'>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>大学名称</th>
+                                <th width='120'>所在国家</th>
+                            </tr>
+                        </thead>
+                        <tbody id='digitaryScool'></tbody>
+                    </table>
+                 </div>
+                 <div class='buttonDiv' style="padding: 20px 20px;">
+                    <input type="button" class='buttonA' value="开始" />
+                 </div>
+            </div>
+           <div class='tabsDiv' id='tabs-3' style='display:none'>
+                <div><strong>荷兰学生信息存储与认证机构DUO（Dienst Uitvoering Onderwijs）：</strong><a href="http://www.chsi.com.cn/en/news/201605/20160503/1531690409.html" target="_blank"> 合作机构介绍</a>&nbsp;|&nbsp;<a href="http://www.chsi.com.cn/en/help/howtoapply_duo.jsp" target="_blank">如何申请</a></div>
+                <div><strong>合作的大学：</strong></div>
+                <div class='nsc_collegenetrequest'>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>大学名称</th>
+                                <th width='120'>是否需要申请码</th>
+                            </tr>
+                        </thead>
+                        <tbody id='duoScool'></tbody>
+                    </table>
+                 </div>
+                 <div style="padding-top:6px; color:#666;">申请码是由所申请的国外大学提供的，大学可以根据用户录入的申请码将收到的认证报告与申请的学生关联起来。</div>
+                 <div class='buttonDiv'>
+                    <input type="button" class='buttonA' value="开始" />
+                 </div>
+            </div>
+            <div class='tabsDiv' id='tabs-4' style='display:none'>
+                <div><strong>美国Parchment公司：</strong><a href="http://www.chsi.com.cn/en/news/201605/20160503/1531690408.html" target="_blank"> 合作机构介绍</a>&nbsp;|&nbsp;<a href="http://www.chsi.com.cn/en/help/howtoapply_p.jsp" target="_blank">如何申请</a></div>
+                <div><strong>合作的大学：</strong></div>
+                <ul class="clearFloat all_sel">
+                    <li class="first" data-num="all">全部</li>
+                    <li data-num='A' class="curret">A</li>
+                    <li data-num='B'>B</li>
+                    <li data-num='C'>C</li>
+                    <li data-num='D'>D</li>
+                    <li data-num='E'>E</li>
+                    <li data-num='F'>F</li>
+                    <li data-num='G'>G</li>
+                    <li data-num='H'>H</li>
+                    <li data-num='I'>I</li>
+                    <li data-num='J'>J</li>
+                    <li data-num='K'>K</li>
+                    <li data-num='L'>L</li>
+                    <li data-num='M'>M</li>
+                    <li data-num='N'>N</li>
+                    <li data-num='O'>O</li>
+                    <li data-num='P'>P</li>
+                    <li data-num='Q'>Q</li>
+                    <li data-num='R'>R</li>
+                    <li data-num='S'>S</li>
+                    <li data-num='T'>T</li>
+                    <li data-num='U'>U</li>
+                    <li data-num='V'>V</li>
+                    <li data-num='W'>W</li>
+                    <li data-num='X'>X</li>
+                    <li data-num='Y'>Y</li>
+                    <li data-num='Y'>Z</li>
+                </ul>
+                <div class='nsc_collegenetrequest' id='parchmentSchool'>
+                    
+                 </div>
+                 <div class='buttonDiv'>
+                    <input type="button" class='buttonA' value="开始"/>
+                 </div>
+            </div>
+           
+                 
+      </div>
+<script type="text/javascript" src="http://t1.chei.com.cn/common/jquery/1.8.3/jquery.min.js"></script>      
+<script>
+getJsonFn();
+var jsonData = [],
+    parchmentData = [];
+$(function(){
+   $(".all_sel li").click(function(){
+        var letter = $(this).attr('data-num');
+        sel_school(letter);
+    })
+})
+function getJsonFn(){
+    $.getJSON('school.json',function(data,status) {
+        //applyweb(collegeNet)
+        var cotHtml = '';
+        if(!jQuery.isEmptyObject(data.collegeNet)){
+          for (var i = 0; i < data.collegeNet.length; i++) {
+            cotHtml += '<tr><td class="tdL"> '+ data.collegeNet[i].universityNameFn + '</td></tr>';
+          };
+          $('#applywebScool').append($(cotHtml));
+        }
+        jsonData.push(data.nsc);
+        jsonData.push(data.digitary);
+        jsonData.push(data.duo);
+        jsonData.push(data.parchment);
+    });
+};
+function showDataFn(count){
+    var index = parseInt(count)-1;
+    switch(count){
+      case '1':showNscData(jsonData[index]);break;
+      case '2':showDigitaryData(jsonData[index]);break;
+      case '3':showDuoData(jsonData[index]);break;
+      case '4':showParchment(jsonData[index]);break;
+      default:break;
+    }  
+}
+function showNscData(strData){
+ //nsc
+  var cotHtml = '';
+  if(strData.length!=0){
+    for (var i = 0; i < strData.length; i++) {
+      var flag = strData[i].needAid?'是':'否';
+      cotHtml += '<tr><td class="tdL"> '
+              + strData[i].universityNameFn+'（' +strData[i].universityNameCn
+              + '）</td><td class="tdC"> '+ flag+'</td></tr>';
+    };
+    $('#nscScool').append($(cotHtml));
+    jsonData[0]='';
+  }
+}
+function showDigitaryData(strData){
+ //digitary
+  var cotHtml = '';
+  if(strData.length!=0){
+    for (var i = 0; i < strData.length; i++) {
+      cotHtml += '<tr><td class="tdL"> '
+              + strData[i].universityNameFn+'（' +strData[i].universityNameCn+ '）</td><td class="tdL"> '
+              + strData[i].foreignCountry+'</td></tr>';
+    };
+    $('#digitaryScool').append($(cotHtml));
+    jsonData[1]='';
+  }
+}
+function showDuoData(strData){
+  //duo
+  var cotHtml = '';
+  if(strData.length!=0){
+    for (var i = 0; i < strData.length; i++) {
+      var flag = strData[i].needAid?'是':'否';
+      cotHtml += '<tr><td class="tdL"> '
+              + strData[i].universityNameFn+'（' +strData[i].universityNameCn+ '）</td><td class="tdC"> ' + flag+'</td></tr>';
+    };
+    $('#duoScool').append($(cotHtml));
+    jsonData[2]='';
+  }
+}
+
+function showParchment(strData){
+  //parchment
+  if(strData.length!=0){
+    var licotHtml = '<div class="categoryPart" data-num ="A" style="display:block;">'
+                  + '<div class="college_ftitle">A</div>'
+                  + '<div class="parchmentUniversityList">';
+    for (var i = 0; i < strData.A.length; i++) {
+        licotHtml +='<p>'+strData.A[i].universityNameFn+'（'+ strData.A[i].universityNameCn+'）</p>';
+    };    
+    licotHtml += '</div></div>';
+    $('#parchmentSchool').append($(licotHtml));
+    jsonData[3].A = '';
+    parchmentData = jsonData[3];
+    jsonData[3]='';
+  }  
+}
+function showParchmentDataFn(letter){
+  if(letter!='A'){
+    var cotHtml = '<div class="categoryPart" data-num ="'+letter+'">'
+                  + '<div class="college_ftitle">'+ letter +'</div>'
+                  + '<div class="parchmentUniversityList">';
+    for (var i = 0; i < parchmentData[letter].length; i++) {
+        cotHtml +='<p>'+parchmentData[letter][i].universityNameFn+'（'+ parchmentData[letter][i].universityNameCn+'）</p>';
+    };    
+    cotHtml += '</div></div>';
+    $('#parchmentSchool').append($(cotHtml));
+    parchmentData[letter] = '';
+  } 
+}
+function prequerymate(count){
+  $('.tab_1').children().eq(count).addClass('selected').siblings('li').removeClass('selected');
+  $('#tabs').children('.tabsDiv').eq(count).show().siblings('.tabsDiv').hide(); 
+  if(count>0 && jsonData[parseInt(count)-1]!=''){
+    showDataFn(count);  
+  }
+  
+}
+
+function sel_school(letter){
+  $(".all_sel li[data-num="+letter+"]").addClass('curret').siblings().removeClass('curret');
+  if(letter!='A' && parchmentData[letter].length!=''){
+    showParchmentDataFn(letter);  
+  }
+  if(letter=='all'){
+      $('.categoryPart').show();
+  }else{
+      $('.categoryPart').hide();
+      $(".categoryPart[data-num="+letter+"]").show();           
+  }
+}
+</script>
+        
+    </div>
+</body>
+
+</html>
