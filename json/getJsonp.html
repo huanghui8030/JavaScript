@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>jsonp数据格式获取-代码优化</title>
+    <meta name="keywords" content="jsonp解决跨越问题，$.ajax,type为jsonp格式，" />
+    <meta name="description" content="返回的是带有方法名的参数为json的一个函数，其实是通过js解析一个Javascript代码，所以返回一个方法。" />
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript" src="http://t1.chei.com.cn/common/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+$(function(){
+  getJsonFn()
+})    
+function getJsonFn(){
+  var url= 'http://my.chsi.com.cn/archive/fcopschinfo.action';
+  $.ajax({ 
+    type: "get",
+    cache: false,
+    async: true,
+    crossDomain:true,
+    url: url, 
+    dataType: "jsonp",  
+    jsonp: "callback", //回调函数的参数  
+    jsonpCallback: "mycallback", //回调函数的名称,后台返回的数据一样
+    success: function(data){
+      alert('成功');
+    },
+    error: function(XMLHttpRequest, textStatus, errorThrown){
+      alert('失败');
+    }
+  });
+};
+function mycallback(jsonData){
+  console.log(jsonData);
+}
+    </script>
+</body>
+
+</html>
