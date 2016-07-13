@@ -33,7 +33,16 @@ PicSlide.prototype = {
             d.hover = false
         }
         ;
-        this.auto()
+
+        this.auto();
+        //huanhg@chsi.com.cn 20170713 判断移动设备，加入touch事件
+        if(wapFn()){
+            this.imgs;
+            for(var i=0;i<this.imgs.length;i++){
+                this.touch(this.imgs[i]);
+            }
+            
+        }
     },
     createTab: function() {
         var a = this.imgs.length, c, f = this;
@@ -74,7 +83,7 @@ PicSlide.prototype = {
         this.btns[a].className = "hot";
         this.panelTitle.innerHTML = this.imgs[a].title;
         this[this.act](a);
-        this.current = a
+        this.current = a;
     },
     scroll: function(d) {
         var h = this
@@ -109,27 +118,68 @@ PicSlide.prototype = {
             var e = Math.min(1, (new Date - a) / c);
             d.opacity(d.imgs[b], e);
             if (e == 1) {
-                clearInterval(d.timer)
+                clearInterval(d.timer);
             }
-        }, 10)
+        }, 10);
     },
     opacity: function(a, b) {
         a.style.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity=" + b * 100 + ");";
         if (b == 1) {
-            a.style.filter = null
+            a.style.filter = null;
         }
-        a.style.opacity = b
+        a.style.opacity = b;
     },
     fx: function(a) {
-        return Math.pow(a, 0.5)
+        return Math.pow(a, 0.5);
     },
     auto: function() {
         var a = this;
         setInterval(function() {
             if (!a.hover) {
-                a.focus(a.current + 1)
+                a.focus(a.current + 1);
             }
         }, this.interval)
+    },
+    /**
+     * 方法扩展，加入touch事件，在移动设备上可鼠标滑动
+     * @param target 目标元素a标签
+     * @author huangh@chsi.com.cn
+     * @date 2017.07.13
+     */
+    touch: function(target){
+        var a = this;
+        var page = {
+            x:0,
+            y:0
+        };
+        var touched;
+        target.addEventListener('touchstart',function(e){
+            clearTimeout(this.timer);
+            page.x = e.changedTouches[0].pageX;
+            page.y = e.changedTouches[0].pageY;
+        });
+        target.addEventListener('touchmove', function(e){
+            if(null===touched){
+                var pageX = e.changedTouches[0].pageX-page.x;
+                var pageY = e.changedTouches[0].pageY-page.y;
+                touched=Math.abs(pageX-page.x)<Math.abs(pageY-page.y);
+            }
+            if(!touched)e.preventDefault();
+        });
+        target.addEventListener('touchend', function(e){
+            var pageX = e.changedTouches[0].pageX-page.x;
+            var pageY = e.changedTouches[0].pageY-page.y;
+            if(Math.abs(pageX)>50){
+                var index = a.current;
+                if(pageX>0){//上一页
+                    a.focus(index - 1);
+                }else{//下一页
+                    a.focus(index + 1);
+                }
+            }
+            this.timer = setTimeout(a.auto, a.interval);
+            touched=null;
+        });
     }
 };
 function SlideLay(b) {
@@ -486,7 +536,7 @@ AutoSlide.prototype = {
             d.hover = false
         }
         ;
-        this.auto()
+        this.auto();
     },
     createTab: function() {
         var a = this.imgs.length, c, f = this;
@@ -721,3 +771,27 @@ z_PicSlide.prototype = {
         }, this.interval)
     }
 };
+
+/**
+ * @description 判断设备是否为移动端设备
+ * @return ture是，false否
+ * @author huangh@chsi.com.cn
+ * @date 2016.07.12
+ */
+function wapFn() {
+    var sUserAgent = navigator.userAgent.toLowerCase(),
+        bIsIpad = sUserAgent.match(/ipad/i) == "ipad",
+        bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os",
+        bIsMidp = sUserAgent.match(/midp/i) == "midp",
+        bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4",
+        bIsUc = sUserAgent.match(/ucweb/i) == "ucweb",
+        bIsAndroid = sUserAgent.match(/android/i) == "android",
+        bIsCE = sUserAgent.match(/windows ce/i) == "windows ce",
+        bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    //移动设备
+    if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+        return true;
+    } else {//pc
+        return false;
+    }
+}
