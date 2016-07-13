@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>页面title和文章内容移动-move</title>
+
+    <style>
+      #box-right {
+        position: absolute;
+        left: 100px;
+        opacity: 0;
+      }
+      #box-title {
+        position: absolute;
+        top: 100px;
+        left: 210px;
+        opacity: 0;
+      }
+      #box-subtitle {
+        position: absolute;
+        top: 250px;
+        left: 110px;
+        opacity: 0;
+      }
+      #box-a {
+        position: absolute;
+        top: 600px;
+        left: 210px;
+        opacity: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+   
+    <h2 id="box-title" src="http://axvert.chsi.com.cn/img/1665350684.jpg"> 标题 </h2>
+    <div id="box-subtitle">
+      <p>内容文字的内容是什么呢</p>
+      <img  src="http://axvert.chsi.com.cn/img/1666126232.jpg">
+    </div>
+    <a href='#' id='box-a'>详情</a>
+    <img id="box-right" src="http://axvert.chsi.com.cn/img/1695495842.jpg">
+  
+<script src="js/move.js"></script>
+<script>
+  addEventListener('DOMContentLoaded', function(){
+    move('#box-right')
+      .duration(1000)
+      .set('opacity', 1)
+      .add('left', 500)
+      .end();
+    move('#box-title')
+      .add('top', 100)
+      .set('opacity', 1)
+      .duration(1200)
+      .delay(500)
+      .end();
+  
+    move('#box-subtitle')
+      .add('left', 100)
+      .set('opacity', 1)
+      .duration('1.2s')
+      .delay('1.5s')
+      .end();
+
+    move('#box-a')
+      .add('top', -100)
+      .set('opacity', 1)
+      .duration(1200)
+      .delay(500)
+      .end(); 
+  }, false);
+</script>    
+  </body>
+</html>

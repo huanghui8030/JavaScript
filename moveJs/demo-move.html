@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>移动效果-move</title>
+    <style>
+      #square {
+        border: 1px solid #888;
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="square"></div>
+    <script src="js/move.js"></script>
+    <script>
+      move('#square')
+        .x(500)
+        .y(200)
+        .ease('in-out')
+        .then()
+          .x(-500)
+          .then()
+            .y(-200)
+            .duration('2s')
+            .delay('.5s')
+            .rotate(180)
+            .pop()
+          .pop()
+        .end();
+    </script>
+  </body>
+</html>
