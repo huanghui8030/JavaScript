@@ -102,15 +102,13 @@ PicSlide.prototype = {
         }, 10)
     },
     fade: function(b) {
-        var d = this
-          , a = +new Date
-          , c = this.time;
+        var d = this, a = +new Date(), c = this.time;
         this.imgs[this.current].style.display = "none";
         this.opacity(this.imgs[b], 0);
         this.imgs[b].style.display = "";
         clearInterval(this.timer);
         this.timer = setInterval(function() {
-            var e = Math.min(1, (new Date - a) / c);
+            var e = Math.min(1, (new Date() - a) / c);
             d.opacity(d.imgs[b], e);
             if (e == 1) {
                 clearInterval(d.timer);
@@ -167,7 +165,7 @@ PicSlide.prototype = {
             if(Math.abs(pageX)>50){
                 var index = a.current;
                 if(pageX>0){//上一页
-                    if(index == 0){
+                    if(index === 0){
                        index = a.imgs.length;
                     }
                     a.focus(index - 1);
