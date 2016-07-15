@@ -26,22 +26,17 @@ PicSlide.prototype = {
         this.createTab();
         this.interval = Math.max(this.interval, this.time);
         c.onmouseover = function() {
-            d.hover = true
-        }
-        ;
+            d.hover = true;
+        };
         c.onmouseout = function() {
-            d.hover = false
-        }
-        ;
-
+            d.hover = false;
+        };
         this.auto();
         //huanhg@chsi.com.cn 20170713 判断移动设备，加入touch事件
         if(wapFn()){
-            this.imgs;
             for(var i=0;i<this.imgs.length;i++){
                 this.touch(this.imgs[i]);
             }
-            
         }
     },
     createTab: function() {
@@ -172,13 +167,18 @@ PicSlide.prototype = {
             if(Math.abs(pageX)>50){
                 var index = a.current;
                 if(pageX>0){//上一页
+                    if(index == 0){
+                       index = a.imgs.length;
+                    }
                     a.focus(index - 1);
+                    e.preventDefault();
                 }else{//下一页
                     a.focus(index + 1);
                 }
             }
             this.timer = setTimeout(a.auto, a.interval);
             touched=null;
+
         });
     }
 };

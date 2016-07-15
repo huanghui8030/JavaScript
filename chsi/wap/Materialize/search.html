@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="format-detection" content="telephone=no" />
+<title>《中国高等教育学历认证报告》查询</title>
+<link rel="stylesheet" type="text/css" href="http://t1.chei.com.cn/common/wap/materialize/css/materialize.min.css"/>
+</head>
+<body>
+  <div class='container'>
+    <h4 class='center-align'>《中国高等教育学历认证报告》查询</h4>
+    <form method="post" id="formBG" name="formBG" action="<%=ctxPath%>/wap/xlrz/query/queryBG_org.jsp">
+     
+       <div class='input-field'>
+       		<input type="text" name="ZSBH" id="ZSBH" maxlength="20" class='validate' autocomplete="off"/><label for="ZSBH">证书编号</label></div>
+       <div class='input-field'>
+       		<input  type="text" name="BGBH" id="BGBH" maxlength="7" class='validate' autocomplete="off"/><label for="ZSBH">报告编号</label></div>
+       <div class='input-field'>
+       		<input type="text" name="CHKNUM" id="CHKNUM" maxlength="4" class='validate' autocomplete="off"/>
+        	<label for="ZSBH">验证码</label>
+	        <div class='right' style='margin-top:-56px'>
+	        	<img border='0' style='height:32px' src='http://www.chsi.com.cn/ValidatorIMG.JPG?ID=1600.3588914943666'/>
+	        </div>
+       </div>
+
+      	<button class="btn waves-effect waves-light disabled" type="submit" name="action" style='width:100%' id='submit_btn' >查&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;询
+  		</button>
+          <script type="text/javascript">document.write("<input type='hidden' name='javascript' value='<%=tempJavacript%>' />");</script>    
+
+    </form>
+  </div>  
+<script type="text/javascript" src='http://t4.chei.com.cn/common/jquery/2.1.1/jquery.min.js'></script>  
+<script type="text/javascript" src='http://t4.chei.com.cn/common/wap/materialize/js/materialize.min.js'></script>
+<script type="text/javascript" src='http://www.chsi.com.cn/js/check.js'></script>
+<script type="text/javascript">
+g("formBG").onsubmit = function(){return checkformBG();}
+function checkformBG(){
+    if(isNotNull("ZSBH","证书编号") && isNotNull("BGBH","报告编号") && isNotNull("CHKNUM","验证码")){
+		//进一步校验各个项的值
+		if(!isZSBH(formBG.ZSBH.value)){
+			if(isDie()){
+			    Materialize.toast('证书编号不符合规范，请核实后重试!', 2000,'',function(){$("#submit_btn").removeClass('disabled');});
+			}
+			//alert("证书编号不符合规范，请核实后重试!");
+			return false;
+		}
+		if(!isNumber_Ex(g("BGBH").value,7)){
+			if(isDie()){
+				Materialize.toast('报告编号必须为七位数字，请核实后重试!', 2000,'',function(){$("#submit_btn").removeClass('disabled');});
+				}
+			//Materialize.toast('报告编号必须为七位数字，请核实后重试!', 2000);
+			//alert("报告编号必须为七位数字，请核实后重试!");
+			return false;
+		}
+		if(!isNumber_Ex(g("CHKNUM").value,4)){
+			if(isDie()){
+			    Materialize.toast('验证码必须为四位数字，请核实后重试!', 2000,'',function(){$("#submit_btn").removeClass('disabled');});
+			}
+			//alert("验证码必须为四位数字，请核实后重试!");
+			return false;
+		}
+		return true;
+	}
+	return false;
+}
+
+/*
+* description : 保证页面中只有一个Dialogs
+* date : 2016.06.27
+* author : yinxl@chsi.com.cn
+*/
+function isDie(){
+	var _lenght = $('#toast-container .toast').length;
+	if(_lenght>0){
+		$("#submit_btn").addClass('disabled');		
+		return false;
+		}else{
+			return true;
+			}
+	}
+	
+$(function(){
+    checkInput('formBG','submit_btn');
+})
+/**
+ * description : from表单验证，所填项为空时查询按钮灰置，输入完后按钮变为常规状态且可点击
+ * based on : jQuery 
+ * param1 fromId : from表单的id
+ * param2 btnId : 提交from的查询按钮的id
+ * date : 2016.03.15
+ * author : huanghui
+ **/
+function checkInput(fromId,btnId){
+    var $target = $('#'+fromId).find('input[type="text"]');
+    $target.on('input paste',function(event){
+        event.stopPropagation();          
+      	setTimeout(function(){
+            var flag = true;
+            $target.each(function(index, element) {
+               if($.trim($(this).val()) ==''){
+                   flag = false;
+                   return false;
+               }                
+            }); 
+            var $btn = $('#'+btnId);
+            if(flag){
+                $btn.removeClass('disabled').attr('disabled',false); 
+            }else{
+                $btn.addClass('disabled').attr('disabled',true); 
+            }            
+        },500); 
+    });       
+}
+</script>
+</body>
+</html>
