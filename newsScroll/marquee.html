@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>marquee信息滚动</title>
+<style>
+.div-block{
+	margin:0 auto;
+	border:1px solid #ccc;
+	box-shadow: 0 0 5px #ccc;
+	width:500px;
+}
+</style>     
+</head>
+
+<body>
+    <div class='div-block'>
+    	<dl>
+            <dt>marquee文字滚动示例（默认）</dt>
+            <dd><marquee > 此处输入滚动内容，默认文字内容 </marquee>
+            </dd>
+        </dl>
+        <dl>
+            <dt>两端之间来回滚动</dt>
+            <dd><marquee behavior='alternate'> alternate两端之间来回滚动 </marquee>
+            </dd>
+        </dl>
+        <dl>
+            <dt>从下往上循环滚动，移入停止，移除继续，执行3次</dt>
+            <dd><marquee direction='up' behavior='scroll' loop='3' scrollamount='1' scrolldelay=10 align='top' bgcolor='#ededed' height='100' onmouseover='this.stop()' onmouseout='this.start()'> 此处输入滚动内容 </marquee>
+            </dd>
+        </dl>
+    </div>
+</body>
+
+</html>

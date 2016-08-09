@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>无缝滚动</title>
+	<link rel="stylesheet" type="text/css" href="css/newslists.css">	
+</head>
+<body>
+<div class='div-box'>
+	<h3>无缝滚动<span>更多>></span></h3>
+	<div id='news-box' class='news-box'>
+		<ul id='news1'>
+			<li><a href='#'>1、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>2、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>3、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>4、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>5、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>6、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>7、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>8、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>9、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>10、一条新闻内容</a><span>2016-08-09</span></li>
+		</ul>
+		<ul id='news2'></ul>
+	</div>
+	
+</div>
+<script>
+var box = document.getElementById('news-box');
+var news1 = document.getElementById('news1');
+var news2 = document.getElementById('news2');
+var time = 50;
+var Timer = null;
+box.scrollTop =10;	
+setInterval('scrollFn()',50);
+function scrollFn(){
+	box.scrollTop ++;
+	if(box.scrollTop>box.height){
+		news2.innerHTML = news1.innerHTML;
+	}
+}
+
+</script>	
+</body>
+</html>
