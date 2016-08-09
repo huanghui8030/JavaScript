@@ -29,15 +29,22 @@
 var box = document.getElementById('news-box');
 var news1 = document.getElementById('news1');
 var news2 = document.getElementById('news2');
-var time = 50;
-var Timer = null;
+var speed = 50;
 box.scrollTop =10;	
-setInterval('scrollFn()',50);
+news2.innerHTML = news1.innerHTML;
+var NewsScroll = setInterval('scrollFn()',speed);
 function scrollFn(){
-	box.scrollTop ++;
-	if(box.scrollTop>box.height){
-		news2.innerHTML = news1.innerHTML;
+	if(box.scrollTop>news1.scrollHeight){
+		box.scrollTop = 0;
+	}else{
+		box.scrollTop ++;
 	}
+}
+box.onmouseover = function(){
+	clearInterval(NewsScroll);
+}
+box.onmouseout = function(){
+	NewsScroll = setInterval('scrollFn()',speed);
 }
 
 </script>	
