@@ -1,4 +1,4 @@
-1<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -23,7 +23,8 @@
 		</ul>
 	</div>
 	
-</div>
+</div><!-- 
+<script src='js/news-scroll.js'></script> -->
 <script>
 window.onload = onloadFn();
 function onloadFn(){
@@ -35,7 +36,7 @@ function onloadFn(){
 	box.appendChild(news2);
 	//速度值speed，开始滚动
 	var speed = 50;
-	box.scrollTop =10;	
+	box.scrollTop = 0;	
 	var NewsScroll = setInterval(function(){
 		scrollFn(box,news1)
 	},speed);

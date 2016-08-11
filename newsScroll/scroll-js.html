@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>无缝滚动</title>
+	<link rel="stylesheet" type="text/css" href="css/newslists.css">	
+</head>
+<body>
+<div class='div-box'>
+	<h3>无缝滚动<span>更多>></span></h3>
+	<div id='news-box1' class='news-box'>
+		<ul>
+			<li><a href='#'>1、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>2、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>3、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>4、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>5、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>6、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>7、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>8、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>9、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>10、一条新闻内容</a><span>2016-08-09</span></li>
+		</ul>
+	</div>	
+</div>
+
+<div class='div-box'>
+	<h3>间歇性滚动<span>更多>></span></h3>
+	<div id='news-box2' class='news-box'>
+		<ul>
+			<li><a href='#'>1、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>2、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>3、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>4、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>5、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>6、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>7、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>8、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>9、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>10、一条新闻内容</a><span>2016-08-09</span></li>
+		</ul>
+	</div>
+</div>
+<script src='js/news-scroll.js'></script>
+<script>
+new NewsScroll('news-box1',{type:'seamless'});
+new NewsScroll('news-box2',{type:'intermittent'});
+</script>	
+</body>
+</html>
