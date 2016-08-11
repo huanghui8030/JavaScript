@@ -16,8 +16,8 @@ function NewsScroll(targetId, json) {
 NewsScroll.prototype = {
     timer : null ,     //定时器
     speed : 50,        //滚动速度
-    pause : 500,      //间歇性滚动事件
-    liHeigth:24,      //间歇性滚动时每次滚动的高度
+    pause : 500,       //间歇性滚动事件
+    liHeigth:24,       //间歇性滚动时每次滚动的高度
     type : "seamless", //滚动方式，间歇性滚动还是无缝滚动，默认为无缝滚动
     //自定义方法
     init:function(){
@@ -30,7 +30,7 @@ NewsScroll.prototype = {
 		_box.appendChild(newUl);
 		//速度值speed，开始滚动
 		_box.scrollTop = 0;	
-		
+		_this.style();
 		//只有为无缝滚动时才会有鼠标移入停止，鼠标移除继续滚动的功能
 		if(_this.type == 'seamless'){
 			_this.timer = setInterval(function(){
@@ -64,6 +64,11 @@ NewsScroll.prototype = {
     	},_this.speed);
 		box.scrollTop ++;
     },
+    /**
+     * 滚动方法，间歇性滚动放 huangh@chsi.com.cn，20170811，遗留问题明天解决
+     * 1、将box和ulLists提取出来，不用每次都传参数
+     * 2、将scrollFn和scroll或者是startScroll三个方法进行结合
+     */
     scrollFn:function(box,ulLists){
     	var _this = this;
     	if(box.scrollTop%_this.liHeigth==0){
@@ -77,5 +82,20 @@ NewsScroll.prototype = {
 				box.scrollTop = 1;
 			}
 		}
+    },
+    /**
+     * 动态增加样式表 huangh@chsi.com.cn，20160811，明天来解决，遗留问题
+     * 1.解决多次加载的问题，判断是否存在
+     * 2.路径需要是相对news-scroll.js的，而不是相对于项目的。
+     */
+    style:function(){
+    	var a = document.createElement("link");
+        a.rel = "stylesheet";
+        a.type = "text/css";
+        a.href = "css/newslists.css";
+	    a.media = "screen";
+	    var i = document.getElementsByTagName("head")[0];
+	    i.appendChild(a);
+
     }
 };    

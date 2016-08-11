@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>无缝滚动</title>
-	<link rel="stylesheet" type="text/css" href="css/newslists.css">	
+	<!-- <link rel="stylesheet" type="text/css" href="css/newslists.css"> -->	
 </head>
 <body>
 <div class='div-box'>
@@ -44,7 +44,7 @@
 <script src='js/news-scroll.js'></script>
 <script>
 new NewsScroll('news-box1',{type:'seamless'});
-new NewsScroll('news-box2',{type:'intermittent'});
+new NewsScroll('news-box2',{type:'intermittent',pause:1000});
 </script>	
 </body>
 </html>
