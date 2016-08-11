@@ -1,0 +1,66 @@
+1<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>间歇性滚动</title>
+	<link rel="stylesheet" type="text/css" href="css/newslists.css">	
+</head>
+<body>
+<div class='div-box'>
+	<h3>间歇性滚动<span>更多>></span></h3>
+	<div id='news-box' class='news-box'>
+		<ul id='news1'>
+			<li><a href='#'>1、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>2、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>3、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>4、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>5、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>6、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>7、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>8、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>9、一条新闻内容</a><span>2016-08-09</span></li>
+			<li><a href='#'>10、一条新闻内容</a><span>2016-08-09</span></li>
+		</ul>
+	</div>
+	
+</div>
+<script>
+var NewsScroll = '';
+var box = document.getElementById('news-box');
+var news1 = document.getElementById('news1');
+var liHeigth = 26;
+//新建一个ul元素，然后追加到div#news-box里面，最后将news1的内容复制给news2
+var news2 = document.createElement('ul');
+news2.innerHTML = news1.innerHTML;
+box.appendChild(news2);
+//速度值speed，开始滚动
+var speed = 50,pause = 500;
+box.scrollTop = 0;	
+setTimeout('startScroll()',pause);
+
+// box.onmouseover = function(){
+// 	clearInterval(NewsScroll);
+// }
+// box.onmouseout = function(){
+// 	setTimeout('startScroll()',pause);
+// }
+function startScroll(){
+	NewsScroll = setInterval('scrollFn()',speed);
+	box.scrollTop ++;
+}
+function scrollFn(){
+	if(box.scrollTop%liHeigth==0){
+		clearInterval(NewsScroll);
+		setTimeout('startScroll()',pause);
+
+	}else{
+		box.scrollTop ++;
+		if(box.scrollTop>news1.scrollHeight){
+			box.scrollTop = 1;
+		}
+	}
+}
+
+</script>	
+</body>
+</html>

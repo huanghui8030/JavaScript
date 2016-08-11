@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -51,14 +51,11 @@ function onloadFn(){
 }
 function scrollFn(box,news1){
 	if(box.scrollTop>news1.scrollHeight){
-		box.scrollTop = 1;//
+		box.scrollTop = 1;//设置为1滚动更加流畅，如果为0会有一个小的停顿。
 	}else{
 		box.scrollTop ++;
 	}
 }
-
-
-
 </script>	
 </body>
 </html>
