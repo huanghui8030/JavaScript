@@ -1,0 +1,60 @@
+@liH:26px;
+@baseColor:#333;
+@gray:#ccc;
+@hoverColor:red;
+.div-box{
+	margin:0 auto;
+	border:5px solid @gray;
+	width:400px;
+	font-size:14px;
+	overflow: hidden;
+	padding:0;
+	box-shadow: 0 0 10px @gray;
+	border-radius: 12px;
+	color:@baseColor;
+	margin-top:20px;
+	h3{
+		background: #09c;
+		color:#fff;
+		height: 50px;
+		line-height: 50px;
+		margin:0px;
+		padding:0 20px;
+		span{
+			float: right;
+			display: inline-block;
+			font-size:12px;
+			font-weight: 400;
+			vertical-align: middle;
+		}
+	}
+}
+.news-box{
+	height: 144px;
+	width: 335px;
+	margin-left: 25px;
+	margin-top: 10px;
+	overflow: hidden;
+	ul{
+		padding:0 30px;
+		margin:0;
+	}
+	li{
+		list-style: none;
+		margin:0;
+		padding:0;
+		height:@liH ;
+		line-height: @liH;
+		&:hover a{
+			color:@hoverColor;
+		}
+		span{
+			display: inline-block;
+			float: right;
+		}
+	}
+	li a{
+		text-decoration: none;
+		color:@baseColor;
+	}
+}

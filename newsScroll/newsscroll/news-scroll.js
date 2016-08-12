@@ -6,11 +6,11 @@
  * @date 20160811
  */
 function NewsScroll(targetId, json) {
-    this.box = (typeof targetId == "string") ? document.getElementById(targetId) : targetId;
+    this.box = (typeof targetId == 'string') ? document.getElementById(targetId) : targetId;
     for (var i in json) {
         this[i] = json[i];
     }
-    this.type = (this.type == "intermittent") ? "intermittent" : "seamless";
+    this.type = (this.type == 'intermittent') ? 'intermittent' : 'seamless';
     this.init();
 }
 NewsScroll.prototype = {
@@ -18,7 +18,7 @@ NewsScroll.prototype = {
     speed : 50,        //滚动速度
     pause : 500,       //间歇性滚动事件
     liHeigth:24,       //间歇性滚动时每次滚动的高度
-    type : "seamless", //滚动方式，间歇性滚动还是无缝滚动，默认为无缝滚动
+    type : 'seamless', //滚动方式，间歇性滚动还是无缝滚动，默认为无缝滚动
     //自定义方法
     init:function(){
     	var _this = this,
@@ -84,17 +84,60 @@ NewsScroll.prototype = {
 		}
     },
     /**
-     * 动态增加样式表 huangh@chsi.com.cn，20160811，明天来解决，遗留问题
-     * 1.解决多次加载的问题，判断是否存在
-     * 2.路径需要是相对news-scroll.js的，而不是相对于项目的。
+     * @description 获取页面script标签，然后得到news-scroll.js的路径
+     * @return {String} js路径
+     * @author huangh@chsi.com.cn
+     * @date 20160812
+     */
+    getSpath:function(){
+    	var spath, str, scripts = document.getElementsByTagName('script');
+        for (var i = 0,j=scripts.length; i < j; i++) {
+            spath = scripts[i].getAttribute('src') || '';
+            spath = spath.substr(0, spath.toLowerCase().indexOf('news-scroll.js'));
+            str = spath.lastIndexOf('/');
+            if (str > 0){
+                spath = spath.substring(0, str + 1);
+            }
+            if(spath){
+                break;
+            }
+        }
+        return spath;
+
+    },
+    /**
+     * @description 判断页面是否已存在，避免样式表重负加载
+     * @return {Boolean} true存在该样式，false不存在
+     * @author  huangh@chsi.com.cn
+     * @date 20160812
+     */
+    hasStyle:function(){
+        var flag = false,styles = document.getElementsByTagName('link');
+        for (var i = 0,j=styles.length; i < j; i++) {
+            var spath = styles[i].getAttribute('href')||'';
+            if(spath.indexOf('news-scroll.css')){
+                flag = true;
+                break;
+            }
+        }
+        return flag;
+    },
+    /**
+     * @description 动态增加样式表，在js所在路径下的css文件里面。
+     * @author  huangh@chsi.com.cn
+     * @date 20160811
      */
     style:function(){
-    	var a = document.createElement("link");
-        a.rel = "stylesheet";
-        a.type = "text/css";
-        a.href = "css/newslists.css";
-	    a.media = "screen";
-	    var i = document.getElementsByTagName("head")[0];
+        if(this.hasStyle()){
+            return ;
+        }
+    	var spath,a = document.createElement('link');
+        a.rel = 'stylesheet';
+        a.type = 'text/css';
+        spanth = this.getSpath();
+        a.href = spanth+'css/news-scroll.css';
+	    a.media = 'screen';
+	    var i = document.getElementsByTagName('head')[0];
 	    i.appendChild(a);
 
     }
