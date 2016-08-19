@@ -1,0 +1,15 @@
+{
+    imgSrc:'images/',
+    imgInfo:[
+        {
+            id:1,
+            name:'img01.jpg',
+            title:'图1'
+        },
+        {
+            id:2,
+            name:'img02.jpg',
+            title:'图2'
+        }
+    ]
+}
