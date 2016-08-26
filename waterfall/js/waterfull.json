@@ -1,15 +1,25 @@
 {
-    imgSrc:'images/',
-    imgInfo:[
-        {
-            id:1,
-            name:'img01.jpg',
-            title:'图1'
-        },
-        {
-            id:2,
-            name:'img02.jpg',
-            title:'图2'
-        }
+    "date":[
+        {"id":"01","title":"图1描述","src":"./images/img01.jpg"},
+        {"id":"02","title":"图2描述","src":"./images/img02.jpg"},
+        {"id":"03","title":"图3描述","src":"./images/img03.jpg"},
+        {"id":"04","title":"图4描述","src":"./images/img04.jpg"},
+        {"id":"05","title":"图5描述","src":"./images/img05.jpg"},
+        {"id":"06","title":"图6描述","src":"./images/img06.jpg"},
+        {"id":"07","title":"图7描述","src":"./images/img07.jpg"},
+        {"id":"08","title":"图8描述","src":"./images/img08.jpg"},
+        {"id":"09","title":"图9描述","src":"./images/img09.jpg"},
+        {"id":"10","title":"图10描述","src":"./images/img10.jpg"},
+        {"id":"11","title":"图11描述","src":"./images/img11.jpg"},
+        {"id":"12","title":"图12描述","src":"./images/img12.jpg"},
+        {"id":"13","title":"图13描述","src":"./images/img13.jpg"},
+        {"id":"14","title":"图14描述","src":"./images/img14.jpg"},
+        {"id":"15","title":"图15描述","src":"./images/img15.jpg"},
+        {"id":"16","title":"图16描述","src":"./images/img16.jpg"},
+        {"id":"17","title":"图17描述","src":"./images/img17.jpg"},
+        {"id":"18","title":"图18描述","src":"./images/img18.jpg"},
+        {"id":"19","title":"图19描述","src":"./images/img19.jpg"},
+        {"id":"20","title":"图20描述","src":"./images/img20.jpg"}
     ]
 }
+
