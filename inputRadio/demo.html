@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>radio</title>
+<link rel="stylesheet" href="https://t1.chei.com.cn/common/ch/iconfont.css" />
+<script type="text/javascript" src='http://t1.chei.com.cn/common/jquery/1.9.1/jquery.min.js'></script>
+<style>
+    .main{
+        margin:20px auto;
+    }
+    .chsi-radio input[type='radio']{
+        display: none;
+    }
+    .chsi-radio .unchecked{
+        color:#bfbfbf;
+    }
+    .chsi-radio .checked{
+        color:#25b887;
+    }
+    
+</style>
+
+</head>
+<body>
+ <div class='main'>
+    <label for="ids1" class='chsi-radio' defaultSel=false>
+      <input type="radio" name="archiveId" id="ids1" value="ids" >
+        <i class="iconfont unchecked">&#xe68b;</i>
+        <i class="iconfont checked">&#xe687;</i>
+    <span>硕士研究生-中国人民大学-西方经济学</span>
+    </label>
+</div> 
+<script>
+function InputRadio(defaultSel) {
+    this.init();
+}
+InputRadio.prototype = {
+    defaultSel: false,
+    init:function(){
+        var t = this;
+        if(t.defaultSel){
+            
+        }else{
+            
+        }
+    }
+};
+new InputRadio('ids1', {defaultSel: 'false'});
+</script>   
+</body>
+</html>

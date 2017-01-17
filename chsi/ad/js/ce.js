@@ -32,7 +32,7 @@ PicSlide.prototype = {
             d.hover = false;
         };
         this.auto();
-        //huanhg@chsi.com.cn 20170713 判断移动设备，加入touch事件
+        //huanhg@chsi.com.cn 20160713 判断移动设备，加入touch事件
         if(wapFn()){
             for(var i=0;i<this.imgs.length;i++){
                 this.touch(this.imgs[i]);
