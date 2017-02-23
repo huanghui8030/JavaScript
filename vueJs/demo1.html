@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VUE-hello</title>
+    <!-- <script src="https://unpkg.com/vue/dist/vue.js"></script> -->
+    
+  </head>
+  <body>
+    <h2 id="app" v-html="message">
+      {{ message }}
+    </h2>
+    <div id="app-2"  v-bind:title="message">
+        鼠标移上div时，title值为vue的值!
+    </div>
+    <div id="app-3">
+      <p v-if="seen">Now you see me</p>
+    </div>
+    <div id="app-4" >
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+    <div id="app-6">
+      <p>{{ message }}</p>
+      <input v-model="message">
+    </div>
+  </body>
+<script src="js/vue.js"></script> 
+<script>
+//简单实例。v-html为hmtl模板
+var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue! <a href="www.chsi.com.cn">学信网</a>'
+    }
+});
+//“v-bind”绑定属性值，设置div的title属性
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    message: '鼠标移上时，时间为：' + new Date()
+  }
+});
+//app3.seen = false时，div消失
+var app3 = new Vue({
+  el: '#app-3',
+  data: {
+    seen: true
+  }
+});
+//“v-for” 指令可以绑定数据到数组来渲染一个列表
+//app4.todos.push({ text: 'New item' }) ,新增数据
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ]
+  }
+});
+//“v-on” 添加事件绑定，修改文本值
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Hello Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+});
+    
+//v-model，它使得在表单输入和应用状态中做双向数据绑定
+var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Hello Vue!'
+  }
+});    
+</script>
+</html>

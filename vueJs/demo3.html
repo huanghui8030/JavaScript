@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue构造器</title>
+</head>
+<body>
+ <div id="demo">{{ fullName }}</div>
+ 
+<div id="example1">
+  {{ message.split('').reverse().join('') }}
+</div>
+<div id="example2">
+  <p>一组信息: "{{ message }}"</p>
+  <p>反过来的一组信息: "{{ reversedMessage }}"</p>
+</div>
+<script src="js/vue.js"></script> 
+<script>
+var vm = new Vue({
+  el: '#demo',
+  data: {
+    firstName: 'Foo',
+    lastName: 'Bar'
+  },
+  computed: {
+    fullName: function () {
+      return this.firstName + ' ' + this.lastName
+    }
+  }
+});
+//信息反过来：message.split('').reverse().join('');
+//方法1
+var ex1 = new Vue({
+    el:'#example1',
+    data:{message:'这是个反过来的函数！'}
+});
+//方法2：
+var ex2 = new Vue({
+    el:'#example2',
+    data:{
+        message:'信息test！'
+    },
+    methods:{
+        reversedMessage:function(){
+            return this.message.split('').reverse().join('');
+        }
+    }
+});
+</script>          
+</body>
+</html>
