@@ -14,6 +14,12 @@
   <p>一组信息: "{{ message }}"</p>
   <p>反过来的一组信息: "{{ reversedMessage }}"</p>
 </div>
+<div id="example3">
+  <p>一组信息: "{{ message }}"</p>
+  <p>另一种方法：{{ reversedMessage() }}</p>
+</div>
+
+
 <script src="js/vue.js"></script> 
 <script>
 var vm = new Vue({
@@ -40,12 +46,25 @@ var ex2 = new Vue({
     data:{
         message:'信息test！'
     },
+    computed:{
+        reversedMessage:function(){
+            return this.message.split('').reverse().join('');
+        }
+    }
+});
+//方法3：
+var ex3 = new Vue({
+    el:'#example3',
+    data:{
+        message:'信息test！'
+    },
     methods:{
         reversedMessage:function(){
             return this.message.split('').reverse().join('');
         }
     }
 });
+
 </script>          
 </body>
 </html>
