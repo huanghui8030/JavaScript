@@ -7,9 +7,11 @@ window.onload = function () {
         }
     }
 }
+
 /**
  * 执行方法，图片进行瀑布流显示
  * @param parentId ： 父元素id
+ * @author huangh@chsi.com.cn 
  */
 function waterfull(parentId) {
     var oParent = document.getElementById(parentId);
@@ -38,9 +40,9 @@ function waterfull(parentId) {
 }
 /**
  * 通过父元素，和子元素的classname获取元素
- *
  * @param parent:父级元素
  * @param cName：子元素的classname
+ * @author huangh@chsi.com.cn 
  */
 function getClassNames(parent,cName){
     var ochild = document.getElementsByTagName('*'),
@@ -58,6 +60,7 @@ function getClassNames(parent,cName){
  * @param val：数组中的某个元素值
  * @param arr: 数组对象
  * @return i:当前索引值
+ * @author huangh@chsi.com.cn 
  */
 function getMinIndex(val,arr){
     for(var i in arr){
@@ -70,6 +73,7 @@ function getMinIndex(val,arr){
  * 判断时候可以开始加载数据，当最后一张图露出一半的时候开始加载数据
  * @param
  * @return true/false
+ * @author huangh@chsi.com.cn 
  **/
 function hasLoding(){
     
